@@ -3,123 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>河南天昱环保工程有限公司 - 专注三废治理</title>
-    <link rel="stylesheet" href="css/style.css">
-    </head>
+    <meta name="description" content="河南天昱环保提供专业的环保工程EPC总包和设备制造服务，包括含尘除尘、污水处理等一揽子解决方案。">
+    <title>河南天昱环保 — 环保工程EPC & 设备制造</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo-link">
-                <span class="logo-text">天昱环保</span>
-                </a>
-            <nav class="main-nav">
+    <header id="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">天昱环保</a>
+                </div>
+            <nav class="main-nav" aria-label="主导航">
                 <ul>
-                    <li><a href="#home" class="active">首页</a></li>
-                    <li><a href="#products">产品展示</a></li>
-                    <li><a href="#solutions">解决方案</a></li>
-                    <li><a href="#cases">案例展示</a></li>
-                    <li><a href="#about">关于我们</a></li>
-                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="about.html">关于天昱</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="cases.html">工程案例</a></li>
+                    <li><a href="news.html">新闻资讯</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
                 </ul>
             </nav>
+            <div class="header-cta">
+                <a href="tel:13007606387" class="btn phone-btn">立刻咨询 · 13007606387</a>
+            </div>
+            <button class="hamburger-menu" aria-label="打开导航菜单">☰</button>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero-banner">
-            <div class="hero-content">
-                <h1>二十多年环境工程经验守护美好明天</h1>
-                <p>专业废气 · 废水 · 噪音综合治理</p>
-                <a href="#products" class="cta-button">了解产品</a>
+        <section id="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>天昱环保</h1>
+                <p>专业环保工程总包服务商</p>
+                <a href="#contact" class="btn">立即咨询</a>
             </div>
         </section>
 
-        <section id="products" class="product-section">
+        <section id="products-slider">
             <div class="container">
-                <h2 class="section-title">我们的产品</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <h3>城市污水处理</h3>
-                        <p>格栅、滤网、浓缩机、曝气机械等</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>有机废气处理</h3>
-                        <p>吸收塔、油烟净化器、等离子氧化等</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>脱硫除尘工艺</h3>
-                        <p>脱硫除尘塔、除尘设备</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>废水治理工艺</h3>
-                        <p>WSZ 系列钢板/玻璃钢/不锈钢模块</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>含尘气体治理</h3>
-                        <p>QF 浅层气浮装置等</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>微型环保处理站</h3>
-                        <p>MBR 一体化、地埋式、医疗污水处理</p>
-                    </div>
+                <div class="section-title">
+                    <h2>核心产品中心</h2>
+                    <p>我们提供全方位的环保设备制造与集成服务</p>
                 </div>
-            </div>
-        </section>
-        
-        <section id="about" class="about-section">
-            <div class="container about-layout">
-                <div class="about-text">
-                    <h2 class="section-title">关于河南天昱环保</h2>
-                    <p>河南天昱环保工程有限公司，专注环境污染防治，下设中原亿净环保设备厂，长期从事“三废”治理的设计、研发、制造、安装、调试及售后服务。</p>
-                    <p>我们拥有丰富的实践经验和专业的技术团队，为众多客户提供了高效、可靠的环保解决方案。</p>
-                    <a href="#" class="cta-button-outline">了解更多</a>
-                </div>
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/500x350.png?text=企业车间/资质证书" alt="天昱环保车间或资质证书">
+                <div class="slider-container">
+                    <div class="product-card" data-aos="fade-up">
+                        <img src="https://via.placeholder.com/300x200/006dbc/fff?text=设备一" alt="含尘除尘塔">
+                        <div class="product-card__name">含尘除尘塔</div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://via.placeholder.com/300x200/006dbc/fff?text=设备二" alt="复合式 UV 光氧一体机">
+                        <div class="product-card__name">复合式 UV 光氧一体机</div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://via.placeholder.com/300x200/006dbc/fff?text=设备三" alt="客式排毒柜">
+                        <div class="product-card__name">客式排毒柜</div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://via.placeholder.com/300x200/006dbc/fff?text=设备四" alt="一体化污水处理站">
+                        <div class="product-card__name">一体化污水处理站</div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://via.placeholder.com/300x200/006dbc/fff?text=设备五" alt="脱硫设备">
+                        <div class="product-card__name">脱硫设备</div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                        <img src="https://via.placeholder.com/300x200/006dbc/fff?text=设备六" alt="有机废气处理设备">
+                        <div class="product-card__name">有机废气处理设备</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container contact-layout">
-                <div class="contact-info">
-                    <h2 class="section-title">联系我们</h2>
-                    <p>我们随时准备好为您提供专业的环保咨询与服务，请通过以下方式联系我们，或填写右侧表单。</p>
-                    <ul>
-                        <li><strong>联系人:</strong> 娄总</li>
-                        <li><strong>电话:</strong> 130-0760-6387</li>
-                        <li><strong>客服:</strong> 娄晶晶</li>
-                        <li><strong>电话:</strong> 150-3807-8859</li>
-                        <li><strong>邮箱:</strong> henantianyuhuanbao@126.com</li>
-                        <li><strong>地址:</strong> 郑州市中原区凯旋门 B 座 1401—1406 室</li>
-                    </ul>
+        <section id="about-intro">
+            <div class="container about-intro__grid">
+                <div class="about-intro__text" data-aos="fade-right">
+                    <h2>三十年经验 天昱一路相守</h2>
+                    <p>河南天昱环保科技有限公司是一家集环保技术研发、设备制造、工程设计与施工、运营服务于一体的高新技术企业。自成立以来，我们始终秉持“科技领先，质量为本”的原则，为数百家企业提供了稳定可靠的环保解决方案，赢得了市场的广泛赞誉。</p>
+                    <a href="about.html" class="btn">了解更多</a>
                 </div>
-                <div class="contact-form">
-                    <form action="#" method="POST"> <input type="text" name="name" placeholder="您的姓名" required>
-                        <input type="tel" name="phone" placeholder="您的电话" required>
-                        <input type="email" name="email" placeholder="您的邮箱">
-                        <textarea name="message" rows="5" placeholder="您的留言..." required></textarea>
-                        <button type="submit" class="cta-button">立即提交</button>
-                    </form>
+                <div class="about-intro__image" data-aos="fade-left">
+                    <img src="https://via.placeholder.com/500x350/ccc/fff?text=公司大楼/机房图" alt="天昱环保公司大楼">
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="container">
+                <div class="section-title">
+                    <h2>我们的核心优势</h2>
+                    <p>以技术创新和严格品控，为您的项目保驾护航</p>
+                </div>
+                <div class="advantages__grid">
+                    <div class="advantage-item" data-aos="fade-up">
+                        <div class="advantage-item__icon">✱</div>
+                        <div class="advantage-item__content">
+                            <h3 class="advantage-item__title">持续技术研发投入</h3>
+                            <p class="advantage-item__text">我们设有独立研发中心，与多所高校建立合作关系，确保技术方案始终处于行业前沿。</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="advantage-item__icon">✱</div>
+                        <div class="advantage-item__content">
+                            <h3 class="advantage-item__title">严格质量管控体系</h3>
+                            <p class="advantage-item__text">从原材料采购到设备出厂，全程遵循 ISO9001 标准，确保每一台设备都稳定可靠。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>服务与资源</h2>
+                </div>
+                <div class="service-row" data-aos="fade-up">
+                    <div class="service-row__text">
+                        <h3 class="service-row__title">水处理</h3>
+                        <ul>
+                            <li>工业污水处理</li>
+                            <li>生活污水处理</li>
+                            <li>高难度废水处理</li>
+                            <li>中水回用</li>
+                        </ul>
+                    </div>
+                    <div class="service-row__image">
+                        <img src="https://via.placeholder.com/500x300/eee/333?text=水处理" alt="水处理工程">
+                    </div>
+                </div>
+                <div class="service-row" data-aos="fade-up">
+                     <div class="service-row__image">
+                        <img src="https://via.placeholder.com/500x300/eee/333?text=含尘气体处理" alt="含尘气体处理设备">
+                    </div>
+                    <div class="service-row__text">
+                        <h3 class="service-row__title">含尘气体</h3>
+                        <ul>
+                            <li>工业粉尘治理</li>
+                            <li>脱硫脱硝除尘</li>
+                            <li>有机废气(VOCs)治理</li>
+                            <li>油烟净化除臭</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution-grid">
+            <div class="container">
+                 <div class="section-title">
+                    <h2>一揽子解决方案</h2>
+                    <p>设计 - 制作 - 安装 - 调试 - 维护，我们提供环保工程全生命周期服务</p>
+                </div>
+                <div class="solution-grid__container">
+                    <div class="solution-card" data-aos="fade-up">
+                        <h3 class="solution-card__title">项目勘察与设计</h3>
+                        <p>资深工程师现场勘测，量身定制最优技术方案。</p>
+                    </div>
+                    <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="solution-card__title">设备制造与采购</h3>
+                        <p>自有工厂与严格供应链，确保设备性能与成本优势。</p>
+                    </div>
+                    <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="solution-card__title">工程安装与施工</h3>
+                        <p>经验丰富的施工团队，标准化作业，保证工程质量。</p>
+                    </div>
+                    <div class="solution-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="solution-card__title">系统调试与优化</h3>
+                        <p>精细化调试，确保系统高效稳定运行，达到排放标准。</p>
+                    </div>
+                     <div class="solution-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="solution-card__title">操作培训</h3>
+                        <p>为客户提供全面的设备操作和日常维护培训。</p>
+                    </div>
+                     <div class="solution-card" data-aos="fade-up" data-aos-delay="500">
+                        <h3 class="solution-card__title">长期运维支持</h3>
+                        <p>提供7x24小时快速响应，定期巡检，确保后顾无忧。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cases-gallery">
+            <div class="container">
+                <div class="section-title">
+                    <h2>典型工程案例</h2>
+                    <p>我们的解决方案已在众多行业得到成功应用</p>
+                </div>
+                <div class="cases-gallery__grid">
+                    <div class="case-item" data-aos="fade-up">
+                        <img src="https://via.placeholder.com/400x500/ccc/fff?text=案例1" alt="案例1">
+                        <div class="case-item__overlay"><h3 class="case-item__title">某化工园区废水处理项目</h3></div>
+                    </div>
+                    <div class="case-item" data-aos="fade-up">
+                        <img src="https://via.placeholder.com/400x300/ccc/fff?text=案例2" alt="案例2">
+                        <div class="case-item__overlay"><h3 class="case-item__title">食品加工厂油烟净化工程</h3></div>
+                    </div>
+                    <div class="case-item" data-aos="fade-up">
+                        <img src="https://via.placeholder.com/400x600/ccc/fff?text=案例3" alt="案例3">
+                        <div class="case-item__overlay"><h3 class="case-item__title">家具厂喷涂废气治理</h3></div>
+                    </div>
+                     <div class="case-item" data-aos="fade-up">
+                        <img src="https://via.placeholder.com/400x400/ccc/fff?text=案例4" alt="案例4">
+                        <div class="case-item__overlay"><h3 class="case-item__title">大型燃煤锅炉脱硫脱硝</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners">
+            <div class="container">
+                <div class="section-title">
+                    <h2>信赖我们的伙伴</h2>
+                </div>
+                <div class="partners__grid">
+                    <img class="partner-logo" src="https://via.placeholder.com/150x80/ccc/fff?text=老潼关" alt="老潼关">
+                    <img class="partner-logo" src="https://via.placeholder.com/150x80/ccc/fff?text=麦当劳" alt="麦当劳">
+                    <img class="partner-logo" src="https://via.placeholder.com/150x80/ccc/fff?text=喜旺城" alt="喜旺城">
+                    <img class="partner-logo" src="https://via.placeholder.com/150x80/ccc/fff?text=大米国际" alt="大米国际">
+                    <img class="partner-logo" src="https://via.placeholder.com/150x80/ccc/fff?text=黄盒堂" alt="黄盒堂">
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer id="site-footer">
         <div class="container">
-            <div class="footer-nav">
-                <a href="#home">首页</a> · 
-                <a href="#products">产品</a> · 
-                <a href="#solutions">解决方案</a> · 
-                <a href="#about">关于</a> · 
-                <a href="#contact">联系</a>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>天昱环保</h4>
+                    <p>致力于成为您最信赖的环保工程合作伙伴。</p>
+                </div>
+                <div class="footer-column">
+                    <h4>关于天昱</h4>
+                    <ul>
+                        <li><a href="about.html#team">核心团队</a></li>
+                        <li><a href="about.html#资质">公司资质</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>服务项目</h4>
+                    <ul>
+                        <li><a href="#">除尘脱硫</a></li>
+                        <li><a href="#">水质检测</a></li>
+                        <li><a href="#">环保培训</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>工程设备</h4>
+                    <ul>
+                        <li><a href="#">水处理设备</a></li>
+                        <li><a href="#">气处理设备</a></li>
+                    </ul>
+                </div>
             </div>
-            <p class="copyright">© 2025 河南天昱环保工程有限公司. All Rights Reserved.</p>
-            <p class="address">地址：郑州市中原区凯旋门 B 座 1401—1406 室</p>
+            <div class="footer-bottom">
+                <p>版权所有 &copy; 2025 河南天昱环保科技有限公司 |豫ICP备XXXXXXXX号-1</p>
             </div>
+        </div>
     </footer>
+
+    <a href="#" id="back-to-top" aria-label="回到顶部">↑</a>
 
 </body>
 </html>
