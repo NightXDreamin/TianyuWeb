@@ -179,7 +179,7 @@ section {
     text-align: center;
     height: 100vh;
     color: var(--text-light);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080/333/fff?text=Industrial+Background') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/封面1.png') no-repeat center center/cover;
     padding: 0 20px;
 }
 
@@ -576,5 +576,51 @@ footer {
     }
     .cases-gallery__grid {
         column-count: 1;
+    }
+}
+
+/* --- 13. 移动端导航菜单样式 --- */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* 默认情况下，导航是完全隐藏的 */
+        position: absolute;
+        top: 80px; /* 从header的下方开始 */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        flex-direction: column; /* 让菜单项垂直排列 */
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    .main-nav.is-active {
+        display: flex; /* 当有 is-active 类时，菜单变为 flex 布局并显示出来 */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block; /* 让链接占满整行，方便点击 */
+        padding: 15px 0;
+        width: 100%;
+    }
+    
+    .main-nav a:hover {
+        background-color: var(--bg-gray);
+    }
+    
+    /* 移除PC端的下划线动画，在移动端不适用 */
+    .main-nav a::after {
+        display: none;
     }
 }
