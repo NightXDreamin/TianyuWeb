@@ -3,25 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站 - 首页</title>
+    <title>河南天昱环保工程有限公司 - 专注三废治理</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="about.html">关于我们</a>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">天昱环保</span>
+                </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#products">产品展示</a></li>
+                    <li><a href="#solutions">解决方案</a></li>
+                    <li><a href="#cases">案例展示</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>欢迎来到我的网站！</h1>
-        <p>这是一个纯粹用 HTML 和 CSS 制作的页面。</p>
+        <section id="home" class="hero-banner">
+            <div class="hero-content">
+                <h1>二十多年环境工程经验守护美好明天</h1>
+                <p>专业废气 · 废水 · 噪音综合治理</p>
+                <a href="#products" class="cta-button">了解产品</a>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <div class="container">
+                <h2 class="section-title">我们的产品</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <h3>城市污水处理</h3>
+                        <p>格栅、滤网、浓缩机、曝气机械等</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>有机废气处理</h3>
+                        <p>吸收塔、油烟净化器、等离子氧化等</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>脱硫除尘工艺</h3>
+                        <p>脱硫除尘塔、除尘设备</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>废水治理工艺</h3>
+                        <p>WSZ 系列钢板/玻璃钢/不锈钢模块</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>含尘气体治理</h3>
+                        <p>QF 浅层气浮装置等</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>微型环保处理站</h3>
+                        <p>MBR 一体化、地埋式、医疗污水处理</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="container about-layout">
+                <div class="about-text">
+                    <h2 class="section-title">关于河南天昱环保</h2>
+                    <p>河南天昱环保工程有限公司，专注环境污染防治，下设中原亿净环保设备厂，长期从事“三废”治理的设计、研发、制造、安装、调试及售后服务。</p>
+                    <p>我们拥有丰富的实践经验和专业的技术团队，为众多客户提供了高效、可靠的环保解决方案。</p>
+                    <a href="#" class="cta-button-outline">了解更多</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x350.png?text=企业车间/资质证书" alt="天昱环保车间或资质证书">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <h2 class="section-title">联系我们</h2>
+                    <p>我们随时准备好为您提供专业的环保咨询与服务，请通过以下方式联系我们，或填写右侧表单。</p>
+                    <ul>
+                        <li><strong>联系人:</strong> 娄总</li>
+                        <li><strong>电话:</strong> 130-0760-6387</li>
+                        <li><strong>客服:</strong> 娄晶晶</li>
+                        <li><strong>电话:</strong> 150-3807-8859</li>
+                        <li><strong>邮箱:</strong> henantianyuhuanbao@126.com</li>
+                        <li><strong>地址:</strong> 郑州市中原区凯旋门 B 座 1401—1406 室</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST"> <input type="text" name="name" placeholder="您的姓名" required>
+                        <input type="tel" name="phone" placeholder="您的电话" required>
+                        <input type="email" name="email" placeholder="您的邮箱">
+                        <textarea name="message" rows="5" placeholder="您的留言..." required></textarea>
+                        <button type="submit" class="cta-button">立即提交</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 我的网站</p>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-nav">
+                <a href="#home">首页</a> · 
+                <a href="#products">产品</a> · 
+                <a href="#solutions">解决方案</a> · 
+                <a href="#about">关于</a> · 
+                <a href="#contact">联系</a>
+            </div>
+            <p class="copyright">© 2025 河南天昱环保工程有限公司. All Rights Reserved.</p>
+            <p class="address">地址：郑州市中原区凯旋门 B 座 1401—1406 室</p>
+            </div>
     </footer>
 
 </body>
