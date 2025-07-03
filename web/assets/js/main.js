@@ -35,37 +35,88 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 首页 Hero 轮播图 (升级版) ---
     const slider = document.querySelector('.hero-slider');
-    const slides = document.querySelectorAll('.slide');
-    let currentIndex = 0;
-    const slideIntervalTime = 5000; // 轮播间隔时间 (5秒)
-    let intervalId;
+    if (slider) { // 确保只在有轮播图的页面执行
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const dotsContainer = document.querySelector('.slider-dots');
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSliderPosition();
-    }
+        let currentIndex = 0;
+        const slideIntervalTime = 5000; // 轮播间隔时间 (5秒)
+        let intervalId;
 
-    function updateSliderPosition() {
-        slider.style.transform = `translateX(-${currentIndex * (100 / slides.length)}%)`;
-    }
+        // 根据幻灯片数量创建小圆点
+        function createDots() {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.dataset.index = index;
+                dotsContainer.appendChild(dot);
+            });
+        }
 
-    function startSlider() {
-        intervalId = setInterval(nextSlide, slideIntervalTime);
-    }
+        // 更新小圆点的激活状态
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentIndex].classList.add('active');
+        }
 
-    function stopSlider() {
-        clearInterval(intervalId);
-    }
+        // 更新滑块位置
+        function updateSliderPosition() {
+            slider.style.transform = `translateX(-${currentIndex * (100 / slides.length)}%)`;
+            updateDots();
+        }
 
-    if (slider && slides.length > 0) {
-        startSlider();
+        // 切换到下一张
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSliderPosition();
+        }
 
-        // (可选) 如果需要鼠标悬停停止轮播，可以添加以下代码
-        /*
-        slider.addEventListener('mouseenter', stopSlider);
-        slider.addEventListener('mouseleave', startSlider);
-        */
+        // 切换到上一张
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSliderPosition();
+        }
+        
+        // 重置并启动自动播放
+        function startSlider() {
+            clearInterval(intervalId); // 先清除已有的定时器
+            intervalId = setInterval(nextSlide, slideIntervalTime);
+        }
+
+        // 初始化函数
+        function initSlider() {
+            if (slides.length > 0) {
+                createDots();
+                updateSliderPosition();
+                startSlider();
+
+                // 绑定事件监听
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    startSlider(); // 用户点击后重置自动播放计时
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    startSlider(); // 用户点击后重置自动播放计时
+                });
+
+                dotsContainer.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('dot')) {
+                        currentIndex = parseInt(e.target.dataset.index);
+                        updateSliderPosition();
+                        startSlider(); // 用户点击后重置自动播放计时
+                    }
+                });
+            }
+        }
+
+        initSlider(); // 启动轮播图
     }
 
     // --- 新增：初始化 AOS 动画 ---
