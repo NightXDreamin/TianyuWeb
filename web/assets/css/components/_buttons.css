@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+.btn:hover {
+    background-color: #004a8c;
+    color: var(--text-light);
+    transform: translateY(-3px);
+}
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none; /* JS 控制显示/隐藏 */
+}

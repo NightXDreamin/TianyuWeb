@@ -1,0 +1,78 @@
+@media (max-width: 992px) {
+    .about-intro__grid,
+    .service-row {
+        grid-template-columns: 1fr;
+    }
+    .service-row:nth-child(even) .service-row__image {
+        order: 0; /* Reset order for single column */
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .cases-gallery__grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .main-nav,
+    .header-cta {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    #hero h1 {
+        font-size: 3rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    .footer-grid,
+    .contact-section .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .cases-gallery__grid {
+        column-count: 1;
+    }
+
+    /* Mobile Nav Menu Styles */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 80px; /* Height of header */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 0;
+    }
+    .main-nav.is-active {
+        display: flex;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .main-nav a {
+        display: block;
+        padding: 15px 0;
+        width: 100%;
+    }
+    .main-nav a:hover {
+        background-color: var(--bg-gray);
+    }
+    .main-nav a::after {
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+/* For #products-slider & products.html */
+.product-card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    text-align: center;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card__name, .product-card p {
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+/* For #cases-gallery */
+.case-item {
+    margin-bottom: 20px;
+    break-inside: avoid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.case-item img {
+    width: 100%;
+}
+.case-item__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: var(--text-light);
+    padding: 40px 20px 20px;
+    transform: translateY(100%);
+    transition: transform var(--transition-speed) ease;
+}
+.case-item:hover .case-item__overlay {
+    transform: translateY(0);
+}
+.case-item__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* For #solution-grid */
+.solution-card {
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+.solution-card__title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
