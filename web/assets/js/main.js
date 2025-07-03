@@ -67,4 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
         slider.addEventListener('mouseleave', startSlider);
         */
     }
+
+    // --- 新增：初始化 AOS 动画 ---
+    AOS.init({
+        duration: 800, // 动画持续时间（毫秒）
+        once: true,    // 动画是否只播放一次
+    });
 });
