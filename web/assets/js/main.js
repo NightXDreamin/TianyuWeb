@@ -35,4 +35,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const slider = document.querySelector('.hero-slider');
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+    const slideIntervalTime = 5000; // 轮播间隔时间 (5秒)
+    let intervalId;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSliderPosition();
+    }
+
+    function updateSliderPosition() {
+        slider.style.transform = `translateX(-${currentIndex * (100 / slides.length)}%)`;
+    }
+
+    function startSlider() {
+        intervalId = setInterval(nextSlide, slideIntervalTime);
+    }
+
+    function stopSlider() {
+        clearInterval(intervalId);
+    }
+
+    if (slider && slides.length > 0) {
+        startSlider();
+
+        // (可选) 如果需要鼠标悬停停止轮播，可以添加以下代码
+        /*
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+        */
+    }
 });

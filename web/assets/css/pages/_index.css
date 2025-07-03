@@ -1,26 +1,35 @@
 /* --- Hero Banner --- */
 #hero {
+    /* 移除全局的上下内边距 */
+    padding: 0; 
+    
+    /* 高度精确计算：100%视口高度 减去 80px的页眉高度 */
+    height: calc(100vh - 80px); 
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* 下面的 .hero-slider 和 .slide 样式保持不变 */
+.hero-slider {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    color: var(--text-light);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/封面1.png') no-repeat center center/cover;
-    padding: 0 20px;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform: translateX(0);
 }
-#hero .hero-content {
-    animation: fadeIn 2s ease-in-out;
+
+.slide {
+    flex: 1 0 33.33%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#hero h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-}
-#hero p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* 移除之前 hero-content 的动画 */
+/* #hero .hero-content { animation: none; } */
+/* #hero h1, #hero p, #hero .btn { display: none; } */
 
 /* --- Products Slider --- */
 #products-slider {
