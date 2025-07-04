@@ -63,39 +63,76 @@
     display: none;
 }
 
-/* --- Footer --- */
-#site-footer {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    padding: 60px 0 20px;
+/* --- Footer (新版) --- */
+.footer {
+  background: #00589c; /* 使用了你提供的新色值 */
+  color: #ffffff;
+  padding: 80px 0 0;
+  font-size: 16px;
 }
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
+.footer__inner {
+  display:flex;
+  flex-wrap:wrap;
+  gap:60px;
 }
-.footer-column h4 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.footer__col {
+  flex:1 1 160px;
+  min-width:160px;
 }
-.footer-column ul {
-    list-style: none;
+.footer__col--brand {
+  flex:2 1 280px;
 }
-.footer-column li {
-    margin-bottom: 10px;
+.footer__logo {
+  max-width:160px;
+  margin-bottom:18px;
 }
-.footer-column a {
-    color: #ccc;
+.footer__company {
+  margin:0 0 6px;
+  font-size:20px;
+  font-weight:600;
 }
-.footer-column a:hover {
-    color: var(--text-light);
-    text-decoration: underline;
+.footer__tagline {
+  margin:0 0 18px;
+  font-size:16px;
 }
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #ccc;
+.footer__contact {
+  padding: 0;
+  list-style: none;
+}
+.footer__contact li {
+  margin-bottom: 8px;
+}
+.footer__contact .label {
+  font-weight:600;
+  margin-right:4px;
+}
+.footer__title {
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+.footer__nav {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.footer__nav li {
+  margin:8px 0;
+}
+.footer a {
+  color: #e6f1ff; /* 使用了你提供的新色值 */
+  text-decoration:none;
+}
+.footer a:hover {
+  text-decoration:underline;
+}
+.footer__bottom {
+  margin-top:60px;
+  background:rgba(0,0,0,.08);
+  text-align:center;
+  padding:18px 0;
+  font-size:14px;
+}
+.footer__bottom a {
+    color: inherit; /* 让备案号链接颜色和周围文字一样 */
 }

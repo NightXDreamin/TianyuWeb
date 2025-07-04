@@ -1,25 +1,112 @@
-.contact-section .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: flex-start;
+/* --- Contact Page Styles --- */
+
+/* 页面横幅 */
+.page-hero {
+    background-color: var(--bg-gray);
+    text-align: center;
+    padding: 60px 20px;
 }
-.contact-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.page-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
 }
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.page-hero p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
 }
-.contact-form input,
-.contact-form textarea {
-  padding: 10px 15px;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  font-size: 1rem;
+
+/* 联系方式与表单网格 */
+.contact-section {
+    padding: 80px 0;
 }
-.contact-form button {
-  width: fit-content;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+}
+
+/* 左侧联系信息 */
+.contact-info__title,
+.contact-form__title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.contact-info__list {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 2;
+}
+.contact-info__list li {
+    margin-bottom: 15px;
+}
+.contact-info__list .label {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-right: 8px;
+}
+.contact-info__list a {
+    color: var(--primary-color);
+}
+.contact-info__address {
+    line-height: 1.8;
+}
+.contact-info__qr {
+    margin-top: 40px;
+}
+.contact-info__qr img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+/* 右侧表单 */
+.form__group {
+    margin-bottom: 20px;
+}
+.form__label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 125, 188, 0.15);
+}
+.form__submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* 地图模块 */
+.map-section {
+    padding: 0; /* 地图通常不需要上下内边距 */
+}
+#map-container {
+    width: 100%;
+    height: 450px;
+    background-color: var(--bg-gray); /* 在地图加载前显示一个占位背景色 */
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
 }

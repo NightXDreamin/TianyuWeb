@@ -75,4 +75,13 @@
     .main-nav a::after {
         display: none;
     }
+
+    /* 新增：页脚响应式 */
+    .footer {
+        padding-top: 60px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
