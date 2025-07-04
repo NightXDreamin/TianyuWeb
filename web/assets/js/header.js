@@ -2,7 +2,7 @@ document.write(`
   <header id="site-header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html"><img src="/assets/img/Logo带文字窄.png" alt="天昱环保 LOGO" style="height: 50px;"></a>
+                <a href="index.html"><img src="/web/assets/img/Logo带文字窄.png" alt="天昱环保 LOGO" style="height: 50px;"></a>
             </div>
             <nav class="main-nav" aria-label="主导航">
                 <ul>
