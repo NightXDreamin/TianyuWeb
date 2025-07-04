@@ -1,0 +1,227 @@
+/* assets/css/pages/_about.css */
+
+/* --- 01. Hero Banner --- */
+.hero-about {
+    padding: 80px 0;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    text-align: center;
+    position: relative;
+}
+.hero-about::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明遮罩 */
+    z-index: 1;
+}
+.hero-about .container {
+    position: relative;
+    z-index: 2;
+}
+.hero-about__title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero-about__subtitle {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* --- 02. Company Snapshot --- */
+.company-snapshot {
+    padding: 80px 0;
+}
+.company-snapshot__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.company-snapshot__text p {
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+}
+
+/* --- 03. Strength Highlights --- */
+.strength-highlights {
+    padding: 80px 0;
+    background-color: #f5f8fb; /* 使用了你指定的浅灰色 */
+}
+.strength-highlights__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.strength-card {
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.strength-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+.strength-card__icon {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.strength-card__icon svg {
+    width: 48px;
+    height: 48px;
+}
+.strength-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.strength-card__text {
+    line-height: 1.7;
+}
+
+/* --- 04 & 08. Mission & Team (合并样式) --- */
+.mission-vision, .team-culture {
+    padding: 80px 0;
+}
+.mission-vision__grid, .team-culture__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+.mission-vision h3, .team-culture h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.team-culture__grid img {
+    border-radius: 8px;
+}
+
+/* --- 05. Timeline --- */
+.timeline {
+    position: relative;
+    padding: 80px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.timeline::after { /* 中间的时间线 */
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+.timeline__item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.timeline__item::after { /* 时间轴上的圆点 */
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: white;
+    border: 4px solid var(--primary-color);
+    top: 28px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+.timeline__item:hover::after {
+    transform: scale(1.2);
+}
+.timeline__item--left { left: 0; }
+.timeline__item--right {
+    left: 50%;
+}
+.timeline__item--right::after {
+    left: -10px;
+}
+.timeline__content {
+    padding: 20px 30px;
+    background-color: var(--bg-gray);
+    position: relative;
+    border-radius: 8px;
+}
+.timeline__year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.timeline__desc { margin-top: 10px; }
+
+/* --- 06 & 07. Showcase & Certificates (统一画廊样式) --- */
+.showcase, .certificates-gallery {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+.logo-grid, .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+.logo-grid img {
+    max-width: 100%;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.logo-grid img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+.cert-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --- 09. CTA --- */
+.cta-contact {
+    padding: 60px 0;
+    background-color: #00589c; /* 复用页脚的深色 */
+    color: var(--text-light);
+    text-align: center;
+}
+.cta-contact__text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.cta-contact .btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+}
+.cta-contact .btn:hover {
+    background-color: #fff;
+    color: var(--accent-color);
+}
+
+/* --- 响应式调整 --- */
+@media (max-width: 768px) {
+    .company-snapshot__grid, .strength-highlights__grid {
+        grid-template-columns: 1fr;
+    }
+    .timeline::after { left: 15px; }
+    .timeline__item { width: 100%; padding-left: 50px; padding-right: 0; }
+    .timeline__item--right { left: 0%; }
+    .timeline__item--left::after, .timeline__item--right::after {
+        left: 5px;
+    }
+    .logo-grid, .cert-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 20px;
+    }
+}
