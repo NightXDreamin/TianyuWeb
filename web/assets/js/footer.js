@@ -3,7 +3,7 @@ document.write(`
   <div class="footer__inner container">
 
     <div class="footer__col footer__col--brand">
-      <img src="/web/assets/img/Logo带文字窄.png" alt="天昱环保 Logo" class="footer__logo" />
+      <img src="/assets/img/Logo带文字窄.png" alt="天昱环保 Logo" class="footer__logo" />
       <h4 class="footer__company">河南天昱环保工程有限公司</h4>
       <p class="footer__tagline">美好明天，你我共建！</p>
 
