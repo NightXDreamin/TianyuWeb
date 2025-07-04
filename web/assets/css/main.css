@@ -15,7 +15,7 @@
 
 /* 4. Page-Specific Styles */
 @import url("pages/_index.css");
-@import url("pages/_products.css");
+@import url("pages/products/_products-list.css");
 @import url("pages/_contact.css");
 @import url("pages/_about.css"); /* 为 about.html 留出空文件，以备将来之需 */
 

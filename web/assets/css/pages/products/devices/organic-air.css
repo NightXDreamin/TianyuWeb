@@ -1,3 +1,4 @@
+/* 有机废气处理设备详情页的专属样式 */
 .organic-device .device-hero {
   background: #f5f5f5;
   padding: 3rem 1rem;
@@ -10,7 +11,6 @@
 .organic-device .device-hero p {
   color: #555;
 }
-
 .device-images .image-grid {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +26,6 @@
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 .device-description {
   padding: 2rem 1rem;
   background-color: #fff;
