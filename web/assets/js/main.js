@@ -4,14 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 功能一：汉堡菜单 ---
     const hamburger = document.querySelector('.hamburger-menu');
-    const nav = document.querySelector('.main-nav');
+    const nav = document.querySelector('.header__nav'); 
 
     if (hamburger && nav) {
         hamburger.addEventListener('click', () => {
-            // 点击汉堡菜单时，给导航菜单添加/移除 'is-active' 类
             nav.classList.toggle('is-active');
+            hamburger.classList.toggle('active'); 
         });
     }
+
+    const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
+
+    dropdownItems.forEach(item => {
+        // 我们只在链接本身上加点击事件，而不是整个列表项
+        const link = item.querySelector('a'); 
+        link.addEventListener('click', function(event) {
+            // 判断当前是不是在移动端视图
+            if (window.innerWidth <= 768) {
+                // 阻止链接的默认跳转行为
+                event.preventDefault();
+                // 切换 'is-open' 类来展开或收起子菜单
+                item.classList.toggle('is-open');
+            }
+        });
+    });
+    
     // --- 功能二：平滑滚动到锚点 ---
     const backToTopButton = document.querySelector('#back-to-top');
 

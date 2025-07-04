@@ -4,7 +4,7 @@
     padding: 0; 
     
     /* 高度精确计算：100%视口高度 减去 80px的页眉高度 */
-    height: calc(100vh - 80px); 
+    height: calc(100vh - 120px); 
 
     position: relative;
     overflow: hidden;

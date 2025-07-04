@@ -18,70 +18,81 @@
     html {
         font-size: 14px;
     }
-    .main-nav,
-    .header-cta {
+
+    /* 1. 隐藏PC端导航和CTA按钮 */
+    .header__nav, .header__cta {
         display: none;
-    }
-    .hamburger-menu {
-        display: block;
-    }
-    #hero h1 {
-        font-size: 3rem;
-    }
-    #hero p {
-        font-size: 1.2rem;
-    }
-    .footer-grid,
-    .contact-section .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    .cases-gallery__grid {
-        column-count: 1;
     }
 
-    /* Mobile Nav Menu Styles */
-    .main-nav {
-        display: none;
+    /* 2. 显示汉堡菜单按钮 */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        /* 这里可以加更多汉堡图标的样式 */
+    }
+
+    /* 3. 当导航菜单被激活时 (JS添加了 is-active 类) */
+    .header__nav.is-active {
+        display: block; /* 让它显示出来 */
         position: absolute;
-        top: 80px; /* Height of header */
+        top: 100%; /* 从页眉的底部开始 */
         left: 0;
         width: 100%;
         background-color: white;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        flex-direction: column;
-        padding: 20px 0;
-        gap: 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
-    .main-nav.is-active {
+    
+    /* 4. 修改主导航列表为垂直排列 */
+    .main-nav .nav__list {
         display: flex;
-    }
-    .main-nav ul {
         flex-direction: column;
         width: 100%;
-        gap: 0;
-    }
-    .main-nav li {
-        width: 100%;
-        text-align: center;
-    }
-    .main-nav a {
-        display: block;
-        padding: 15px 0;
-        width: 100%;
-    }
-    .main-nav a:hover {
-        background-color: var(--bg-gray);
-    }
-    .main-nav a::after {
-        display: none;
+        padding: 10px 0;
     }
 
-    /* 新增：页脚响应式 */
-    .footer {
-        padding-top: 60px;
+    .main-nav .nav__item {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
     }
-    .footer__inner {
-        flex-direction: column;
-        gap: 40px;
+    .main-nav .nav__item:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav .nav__link {
+        display: block; /* 让链接占满整行，方便点击 */
+        padding: 15px 20px;
+    }
+    
+    /* 5. 适配下拉菜单 */
+    .nav__item--has-dropdown > .dropdown-menu {
+        /* 在移动端，我们不希望它悬浮，而是直接在下方展开 */
+        position: static; /* 取消绝对定位 */
+        box-shadow: none;
+        border-radius: 0;
+        min-width: 100%;
+        padding: 0;
+        background-color: #f5f8fb; /* 给子菜单一个不同的背景色以区分 */
+        transform: none !important; /* 覆盖PC端的动画效果 */
+        
+        /* 默认隐藏子菜单 */
+        display: none;
+    }
+    
+    /* 当父级导航项被点击时（我们稍后用JS实现），显示子菜单 */
+    .nav__item--has-dropdown.is-open > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li {
+        margin: 0;
+    }
+
+    .dropdown-menu a {
+        padding: 12px 30px; /* 子菜单项增加缩进 */
+        text-align: left;
+        border-bottom: 1px solid #e9eef3;
+    }
+    .dropdown-menu li:last-child a {
+        border-bottom: none;
     }
 }

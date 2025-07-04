@@ -1,49 +1,130 @@
-/* --- Header --- */
-#site-header {
+.header {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
+    padding: 20px 0; 
 }
-#site-header .header-container {
+
+/* 关键改动：为全宽容器添加左右内边距 */
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    width: 100%;
+    padding: 0 40px; /* 左右留出一些空间，避免内容贴边 */
 }
-.logo a {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--text-dark);
+
+.header__logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
 }
-.main-nav ul {
+.header__logo img:hover {
+    transform: scale(1.05);
+}
+
+.main-nav .nav__list {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 45px;
 }
-.main-nav a {
+
+.main-nav .nav__link {
     color: var(--text-dark);
     font-weight: 500;
+    font-size: 18px;
     position: relative;
-    padding: 5px 0;
+    padding: 10px 0;
+    transition: color 0.3s ease;
 }
-.main-nav a::after {
-    content: '';
+.main-nav .nav__link:hover {
+    color: var(--primary-color);
+}
+
+/* --- 下拉菜单样式 (保持不变) --- */
+.nav__item--has-dropdown {
+    position: relative;
+}
+.dropdown-menu {
     position: absolute;
-    bottom: 0;
+    top: 100%;
     left: 50%;
-    width: 0;
-    height: 2px;
+    background-color: white;
+    list-style: none;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    min-width: 200px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+.nav__item--has-dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+.dropdown-menu li { margin: 5px 0; }
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-dark);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu a:hover {
     background-color: var(--primary-color);
-    transition: all var(--transition-speed) ease-in-out;
+    color: var(--text-light);
 }
-.main-nav a:hover::after {
-    left: 0;
-    width: 100%;
+
+/* --- 恢复经典的CTA按钮样式 --- */
+.header__cta .phone-btn {
+    background-color: var(--accent-color); /* 红色背景 */
+    color: var(--text-light);
+    padding: 12px 25px; /* 调整内边距让它更像椭圆 */
+    border-radius: 50px; /* 大圆角形成椭圆 */
+    font-weight: bold;
+    animation: pulse 2s infinite; /* 添加脉冲动画 */
+    transition: all 0.3s ease;
 }
+.header__cta .phone-btn:hover {
+    animation-play-state: paused; /* 悬停时暂停动画 */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(227, 34, 34, 0.4);
+}
+
+/* 脉冲动画 (如果不存在请添加) */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+/* --- 适配移动端的汉堡菜单 --- */
+@media (max-width: 768px) { 
+    .main-nav .nav__list {
+        display: none; /* 默认隐藏导航 */
+    }
+    .hamburger-menu {
+        display: block; /* 显示汉堡菜单 */
+        cursor: pointer;
+    }
+    .hamburger-menu.active + .main-nav .nav__list {
+        display: flex; /* 点击后显示导航 */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* 调整位置以适应页眉高度 */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 15px 0;
+    }
+}
+
 .header-cta .phone-btn {
     background-color: var(--accent-color);
     padding: 10px 20px;

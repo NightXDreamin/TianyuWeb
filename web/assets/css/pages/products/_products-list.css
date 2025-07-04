@@ -1,5 +1,5 @@
 /* 导入所有设备详情页的专属样式 */
-@import url("devices/_organic-air.css");
+@import url("_organic-air.css");
 
 .product-search-section {
   padding: 4rem 1rem;
