@@ -110,3 +110,44 @@
         gap: 60px;
     }
 }
+
+/* --- 地图专属样式 --- */
+.amap-marker .icon { 
+    background: url(//a.amap.com/lbs-dev-yuntu/static/web/image/tools/creater/marker.png) no-repeat; 
+}
+.amap-marker .icon-cir { 
+    height: 31px; 
+    width: 28px; 
+}
+.amap-marker .icon-cir-red { 
+    background-position: -11px -5px; 
+}
+.amap-container {
+    height: 100%;
+}
+.myinfowindow {
+    width: 240px;
+    min-height: 50px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.myinfowindow h5 { 
+    height: 20px; 
+    line-height: 20px; 
+    overflow: hidden; 
+    font-size: 14px; 
+    font-weight: bold; 
+    width: 220px; 
+    text-overflow: ellipsis; 
+    word-break: break-all; 
+    white-space: nowrap; 
+}
+.myinfowindow div { 
+    margin-top: 10px; 
+    min-height: 40px; 
+    line-height: 20px; 
+    font-size: 13px; 
+    color: #6f6f6f; 
+}
