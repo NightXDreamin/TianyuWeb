@@ -1,8 +1,6 @@
-// assets/js/header.js (V3 with Full-width fix)
-
 document.write(`
 <header id="site-header" class="header">
-  <div class="header__container"> 
+  <div class="header__container">
     <div class="header__logo logo">
       <a href="/index.html">
         <img src="/assets/img/Logo带文字窄.png" alt="天昱环保 LOGO">
@@ -26,16 +24,8 @@ document.write(`
           </ul>
         </li>
 
-        <li class="nav__item nav__item--has-dropdown">
+        <li class="nav__item">
           <a href="/services.html" class="nav__link">服务项目</a>
-          <ul class="dropdown-menu">
-            <li><a href="/services.html#consult">咨询</a></li>
-            <li><a href="/services.html#test">检测</a></li>
-            <li><a href="/services.html#train">培训</a></li>
-            <li><a href="/services.html#construction">施工</a></li>
-            <li><a href="/services.html#manufacturing">制造</a></li>
-            <li><a href="/services.html#installation">安装</a></li>
-          </ul>
         </li>
 
         <li class="nav__item nav__item--has-dropdown">
@@ -48,20 +38,13 @@ document.write(`
         </li>
 
         <li class="nav__item nav__item--has-dropdown">
-          <a href="/news.html" class="nav__link">新闻资讯</a>
-          <ul class="dropdown-menu">
-            <li><a href="/news.html#company">企业动态</a></li>
-            <li><a href="/news.html#industry">行业动态</a></li>
-          </ul>
-        </li>
-
-        <li class="nav__item nav__item--has-dropdown">
           <a href="/contact.html" class="nav__link">联系我们</a>
           <ul class="dropdown-menu">
             <li><a href="/contact.html#cooperation">咨询合作</a></li>
             <li><a href="/contact.html#career">工作机会</a></li>
           </ul>
         </li>
+
       </ul>
     </nav>
 

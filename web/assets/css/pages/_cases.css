@@ -1,0 +1,104 @@
+/* assets/css/pages/_cases.css */
+
+/* --- 01. Hero Banner (沿用 about/services 页的样式) --- */
+/* 复用 .hero-about 样式，无需重复编写 */
+
+/* --- 02. 案例分类导航 --- */
+.case-category-section {
+    padding: 80px 0;
+    background-color: var(--bg-gray);
+}
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.category-card {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+.category-card__image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.category-card__content {
+    padding: 30px;
+}
+.category-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.category-card__description {
+    line-height: 1.7;
+    color: #555;
+}
+
+/* --- 03. 精选案例展示 --- */
+.featured-cases-section {
+    padding: 80px 0;
+}
+.featured-case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.featured-case-card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.featured-case-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.featured-case-card:hover img {
+    transform: scale(1.05);
+}
+.featured-case-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 30px 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: var(--text-light);
+}
+.featured-case-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+.featured-case-card__category {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --- 响应式调整 --- */
+@media (max-width: 992px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .featured-case-grid {
+        grid-template-columns: 1fr;
+    }
+}

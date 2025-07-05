@@ -19,6 +19,7 @@
 @import url("pages/_contact.css");
 @import url("pages/_about.css");
 @import url("pages/_services.css");
+@import url("pages/_cases.css");
 
 /* 5. Responsive Styles (Always last to override previous rules) */
 @import url("layout/_responsive.css");
