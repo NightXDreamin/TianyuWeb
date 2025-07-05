@@ -1,137 +1,108 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>产品中心 | 天昱环保</title>
-  <link rel="stylesheet" href="/assets/css/main.css" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="/web/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环保设备产品中心 | 污水处理·废气治理·消毒杀菌设备</title>
+    <meta name="description" content="浏览天昱环保产品目录：一体化污水站、气浮机、玻璃钢净化塔、活性炭吸附箱、除尘器、次氯酸钠发生器等。自有工厂，擅长非标制造，支持定制设计、快速交付与完善售后。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
-  <!-- 页眉容器 -->
-  <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/header.js"></script>
 
-  <main>
-    <section class="product-search-section">
-      <div class="container">
-        <h2>产品中心</h2>
-        <input
-          type="text"
-          id="product-search"
-          placeholder="请输入产品名称..."
-          aria-label="搜索产品"
-        />
-      </div>
-    </section>
+    <main class="products-page">
+        <section class="hero-about" style="background-image: url('/assets/img/工地远景.png');">
+            <div class="container" data-aos="fade-in">
+                <h1 class="hero-about__title">产品中心</h1>
+                <p class="hero-about__subtitle">以精工制造为基石，提供稳定可靠的环保设备</p>
+            </div>
+        </section>
 
-    <section class="product-list-section container">
-      <!-- 分类模块开始 -->
+        <section class="product-category-section">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>产品分类</h2>
+                    <p>我们提供覆盖主要环保应用领域的六大系列产品</p>
+                </div>
 
-      <div class="product-category" data-category="城市污水处理">
-        <h3>1 城市污水处理</h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>污水处理设备 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>污水处理设备 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>污水处理设备 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>污水处理设备 D</p></div>
-        </div>
-      </div>
+                <div class="product-category-grid">
 
-      <div class="product-category" data-category="有机废气处理">
-        <h3><a href="product_lib/gas/index.html">2 有机废气处理</a></h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>废气吸附装置 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>废气吸附装置 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>废气吸附装置 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>废气吸附装置 D</p></div>
-        </div>
-      </div>
+                    <a href="/product_lib/water/index.html" class="product-category-card" data-aos="fade-up">
+                        <div class="product-category-card__image">
+                            <img src="/assets/img/products/污水站池子.png" alt="污水·废水处理设备" loading="lazy">
+                        </div>
+                        <div class="product-category-card__content">
+                            <h3 class="product-category-card__title">污水·废水处理</h3>
+                            <p class="product-category-card__description">覆盖生活与工业污水全流程：从预处理到达标排放，一体化模块安装快、运维省。</p>
+                            <span class="btn product-category-card__cta">查看详情</span>
+                        </div>
+                    </a>
 
-      <div class="product-category" data-category="喷淋洗涤工艺">
-        <h3>3 喷淋洗涤工艺</h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>洗涤塔 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>洗涤塔 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>洗涤塔 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>洗涤塔 D</p></div>
-        </div>
-      </div>
+                    <a href="/product_lib/water_supply/index.html" class="product-category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-category-card__image">
+                            <img src="/assets/img/products/蓄水池.png" alt="纯水·给水系统" loading="lazy">
+                        </div>
+                        <div class="product-category-card__content">
+                            <h3 class="product-category-card__title">纯水·给水系统</h3>
+                            <p class="product-category-card__description">RO、EDI及软水装置按需组合，出水电导率 &lt;10 µS/cm，适配锅炉补水与工艺用水。</p>
+                            <span class="btn product-category-card__cta">查看详情</span>
+                        </div>
+                    </a>
 
-      <div class="product-category" data-category="石灰法工艺">
-        <h3>4 石灰法工艺</h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>石灰投加装置 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>石灰搅拌器 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>沉淀池 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>沉淀池 D</p></div>
-        </div>
-      </div>
+                    <a href="/product_lib/gas/index.html" class="product-category-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-category-card__image">
+                            <img src="/assets/img/products/废气管道.png" alt="废气·恶臭治理设备" loading="lazy">
+                        </div>
+                        <div class="product-category-card__content">
+                            <h3 class="product-category-card__title">废气·恶臭治理</h3>
+                            <p class="product-category-card__description">PP/FRP喷淋塔联合光氧吸附，多段工艺应对VOCs、异味及酸碱废气，排放轻松达标。</p>
+                            <span class="btn product-category-card__cta">查看详情</span>
+                        </div>
+                    </a>
 
-      <div class="product-category" data-category="含尘气体处理工艺">
-        <h3>5 含尘气体处理工艺</h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>布袋除尘器 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>旋风分离器 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>静电除尘器 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>喷淋塔 D</p></div>
-        </div>
-      </div>
+                    <a href="/product_lib/dust/index.html" class="product-category-card" data-aos="fade-up">
+                        <div class="product-category-card__image">
+                            <img src="/assets/img/products/除尘塔.png" alt="除尘·烟气治理设备" loading="lazy">
+                        </div>
+                        <div class="product-category-card__content">
+                            <h3 class="product-category-card__title">除尘·烟气治理</h3>
+                            <p class="product-category-card__description">袋式、旋风、湿式多技术可选；捕集效率 ≥99%，满足锅炉窑炉等高粉尘场景。</p>
+                            <span class="btn product-category-card__cta">查看详情</span>
+                        </div>
+                    </a>
 
-      <div class="product-category" data-category="污泥干化处理（—体化）">
-        <h3>6 污泥干化处理（—体化）</h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>一体化处理设备 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>一体化处理设备 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>污泥压滤机 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>污泥脱水装置 D</p></div>
-        </div>
-      </div>
+                    <a href="/product_lib/disinfection/index.html" class="product-category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-category-card__image">
+                            <img src="/assets/img/products/消毒桶.png" alt="消毒·杀菌设备" loading="lazy">
+                        </div>
+                        <div class="product-category-card__content">
+                            <h3 class="product-category-card__title">消毒·杀菌设备</h3>
+                            <p class="product-category-card__description">自产次氯酸钠、臭氧、紫外线系列设备，现场制剂现场投加，安全高效。</p>
+                            <span class="btn product-category-card__cta">查看详情</span>
+                        </div>
+                    </a>
 
-      <div class="product-category" data-category="运营及维保">
-        <h3>7 运营及维保</h3>
-        <div class="product-grid">
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>维护工具包 A</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>应急监测车 B</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>检测仪器 C</p></div>
-          <div class="product-card"><img src="/assets/img/带logo占位图.png" alt="产品图片"><p>传感器 D</p></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  </main>
+                    <a href="/product_lib/parts/index.html" class="product-category-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-category-card__image">
+                            <img src="/assets/img/products/蜂窝填料.png" alt="填料·配件耗材" loading="lazy">
+                        </div>
+                        <div class="product-category-card__content">
+                            <h3 class="product-category-card__title">填料·配件耗材</h3>
+                            <p class="product-category-card__description">备品备件齐全：弹性填料、曝气头、药泵阀件一站供应。</p>
+                            <span class="btn product-category-card__cta">查看详情</span>
+                        </div>
+                    </a>
 
-  <!-- 页脚容器 -->
-  <script src="/assets/js/footer.js"></script>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- JS 动态加载页眉和页脚 -->
-  <script>
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      });
-
-    fetch('footer.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      });
-  </script>
-
-  <!-- JS 搜索功能 -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const searchInput = document.getElementById("product-search");
-      searchInput.addEventListener("input", function () {
-        const keyword = this.value.toLowerCase();
-        const cards = document.querySelectorAll(".product-card");
-
-        cards.forEach((card) => {
-          const text = card.textContent.toLowerCase();
-          card.style.display = text.includes(keyword) ? "block" : "none";
-        });
-      });
-    });
-  </script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
