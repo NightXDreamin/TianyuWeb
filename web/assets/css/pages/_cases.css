@@ -30,6 +30,11 @@
     height: 220px;
     object-fit: cover;
 }
+.category-card-link {
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
+}
 .category-card__content {
     padding: 30px;
 }
