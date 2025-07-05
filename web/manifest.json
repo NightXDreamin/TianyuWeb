@@ -1,0 +1,21 @@
+{
+  "name": "河南天昱环保工程有限公司",       // 全称，用于安装后应用抽屉
+  "short_name": "天昱环保",                // 主屏幕图标下方文字，建议 ≤ 12 字
+  "description": "专业环保工程总包",       // 可选，浏览器安装提示时显示
+  "start_url": "/index.html",              // 启动入口
+  "display": "standalone",                 // 以“独立应用”模式打开
+  "theme_color": "#006dbc",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/assets/img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
