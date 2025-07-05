@@ -49,3 +49,29 @@ document.write(`
   </div>
 </footer>
 `);
+
+document.write(`
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "河南天昱环保工程有限公司",
+  "url": "https://www.tianyuhuanbao.com/",
+  "logo": "https://www.tianyuhuanbao.com/assets/img/Logo带文字窄.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+86-130-0760-6387",
+    "contactType": "customer service"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "桐柏路与陇海路交叉口凯旋门大厦1406",
+    "addressLocality": "郑州市",
+    "addressRegion": "河南省",
+    "postalCode": "450000",
+
+    "addressCountry": "CN"
+  }
+}
+</script>
+`);
