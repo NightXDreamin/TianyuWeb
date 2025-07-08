@@ -17,7 +17,7 @@ document.write(`
           <ul class="dropdown-menu">
             <li><a href="/product_lib/water/index.html">污水·废水处理</a></li>
             <li><a href="/product_lib/water_supply/index.html">纯水·给水系统</a></li>
-            <li><a href="/product_lib/organic_air/organic-air-treatment.html">废气·恶臭治理</a></li>
+            <li><a href="/product_lib/gas/organic-air-treatment.html">废气·恶臭治理</a></li>
             <li><a href="/product_lib/dust/index.html">除尘·烟气治理</a></li>
             <li><a href="/product_lib/disinfection/index.html">消毒·杀菌设备</a></li>
             <li><a href="/product_lib/parts/index.html">填料·配件耗材</a></li>

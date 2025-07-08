@@ -141,4 +141,27 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 800, // 动画持续时间（毫秒）
         once: true,    // 动画是否只播放一次
     });
+
+    // --- 页内产品搜索功能 ---
+    const searchInput = document.getElementById('page-search-input');
+    
+    // 只有当页面上存在搜索框时，才执行这段逻辑
+    if (searchInput) {
+        const productGrid = document.querySelector('.product-grid');
+        const allProducts = productGrid ? Array.from(productGrid.querySelectorAll('.product-card')) : [];
+
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+
+            allProducts.forEach(card => {
+                const productName = card.textContent.toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    card.style.display = 'block'; // 或者 'flex' 等，取决于你的卡片布局
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
+    
 });

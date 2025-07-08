@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.3.0",
+    "marked": "^16.0.0"
+  }
+}

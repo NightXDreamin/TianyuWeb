@@ -1,4 +1,4 @@
-/* assets/css/pages/products/_product-category.css (V2 with Slider) */
+/* assets/css/pages/products/_product-category.css */
 
 /* --- 分类页 Banner (复用) --- */
 /* .hero-about 样式可直接用于此页面 */
@@ -8,42 +8,15 @@
     padding: 80px 0;
 }
 
-/* --- 这里是关键改动 --- */
 .product-grid {
-    display: flex; /* 1. 从 grid 改为 flex，让所有卡片排成一行 */
-    overflow-x: auto; /* 2. 允许内容横向滚动 */
+    display: grid;
+    /* 在大屏幕上最多显示4列 */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
-    
-    padding: 20px 0; /* 给滚动区域上下留出一点空间 */
-    
-    /* 3. 添加滚动吸附效果，提升体验 */
-    scroll-snap-type: x mandatory;
-    
-    /* 4. 美化滚动条 (可选，但推荐) */
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--border-color);
 }
 
-/* 兼容 Webkit 浏览器 (Chrome, Safari) 的滚动条样式 */
-.product-grid::-webkit-scrollbar {
-    height: 8px;
-}
-.product-grid::-webkit-scrollbar-track {
-    background: var(--border-color);
-    border-radius: 4px;
-}
-.product-grid::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-    border-radius: 4px;
-}
-/* --- 关键改动结束 --- */
-
-
-/* --- 产品卡片样式调整 --- */
+/* 重用我们在首页设计好的产品卡片样式 */
 .product-card {
-    /* 5. 设置固定宽度，防止卡片被压缩 */
-    flex: 0 0 300px; 
-    scroll-snap-align: start; /* 6. 让每个卡片的左侧与容器左侧对齐吸附 */
     text-decoration: none;
     color: var(--text-dark);
     display: block;
@@ -73,4 +46,28 @@
     font-size: 1.1rem;
     margin: 0;
     text-align: center;
+}
+
+/* --- 页内搜索框样式 --- */
+.in-page-search-section {
+    padding: 40px 0;
+    background-color: var(--bg-gray);
+    border-bottom: 1px solid var(--border-color);
+}
+#page-search-input {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 50px; /* 圆角胶囊形状 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#page-search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 125, 188, 0.15);
 }
