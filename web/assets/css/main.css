@@ -20,6 +20,7 @@
 @import url("pages/_about.css");
 @import url("pages/_services.css");
 @import url("pages/_cases.css");
-
+@import url("pages/products/_products-list.css");
+@import url("pages/products/_product-category.css")
 /* 5. Responsive Styles (Always last to override previous rules) */
 @import url("layout/_responsive.css");
