@@ -1,0 +1,229 @@
+/* assets/css/pages/products/gas.css */
+
+/* --- 样式1：废气处理·分类列表页 --- */
+.product-list-section .product-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--border-color);
+}
+.product-list-section .product-grid::-webkit-scrollbar {
+    height: 8px;
+}
+.product-list-section .product-grid::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+.product-list-section .product-grid::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+.product-list-section .product-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+}
+
+/* --- 样式2：废气处理·产品详情页 --- */
+.organic-device .device-hero {
+  background: #f5f5f5;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.organic-device .device-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.organic-device .device-hero p {
+  color: #555;
+}
+.device-images .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.device-images .image-grid img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.device-description {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+/* 为Markdown生成的内容添加样式 */
+.device-description .container {
+    max-width: 800px;
+}
+.device-description h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+.device-description h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.device-description p, .device-description li {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1em;
+}
+.device-description ul, .device-description ol {
+    padding-left: 25px;
+    margin-bottom: 1em;
+}
+.device-description table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.device-description th, .device-description td {
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+    text-align: left;
+}
+.device-description th {
+    background-color: var(--bg-gray);
+    font-weight: 600;
+}
+.device-description tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+.device-detail .container {
+ display: grid;
+ grid-template-columns: 20% 55% 25%;
+ gap: 2rem;
+ padding: 2rem 1rem;
+}
+
+.device-detail .image-gallery {
+ display: flex;
+}
+
+.device-detail .thumbnail-list {
+ list-style: none;
+ padding: 0;
+ margin: 0 1rem 0 0;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+
+.device-detail .thumbnail-list li {
+ cursor: pointer;
+ opacity: 0.7;
+ transition: opacity 0.3s ease;
+ border: 1px solid transparent;
+}
+
+.device-detail .thumbnail-list li.active,
+.device-detail .thumbnail-list li:hover {
+ opacity: 1;
+ border-color: var(--primary-color);
+}
+
+.device-detail .thumbnail-list img {
+ display: block;
+ width: 100%;
+ height: auto;
+ object-fit: cover;
+ aspect-ratio: 1/1; /* 保持方形 */
+}
+
+.device-detail .main-image {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid var(--border-color);
+ border-radius: 8px;
+ overflow: hidden;
+}
+
+.device-detail .main-image img {
+ display: block;
+ max-width: 100%;
+ max-height: 500px;
+ object-fit: contain; /* 保证图片完整显示 */
+}
+
+.device-detail .product-info {
+ padding: 0 1rem;
+}
+
+.device-detail .product-info h1 {
+ font-size: 1.8rem;
+ margin-bottom: 1rem;
+}
+
+.device-detail .product-info .product-description {
+ color: #555;
+ line-height: 1.6;
+}
+
+/* 调整主内容区域的间距 */
+.device-description {
+ padding-top: 0;
+}
+
+/* ===== 修复产品详情页三栏布局 ===== */
+.device-detail .container {
+  display: grid !important;
+  grid-template-columns: 20% 55% 25%;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* 让 image-gallery 这个 wrapper “消失”，其子元素直接成为 grid items */
+.device-detail .image-gallery {
+  display: contents !important;
+}
+
+/* 缩略图列表占第一列 */
+.device-detail .thumbnail-list {
+  grid-column: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* 主图占第二列 */
+.device-detail .main-image {
+  grid-column: 2;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.device-detail .main-image img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* 右侧信息占第三列 */
+.device-detail .product-info {
+  grid-column: 3;
+  padding: 0 1rem;
+}

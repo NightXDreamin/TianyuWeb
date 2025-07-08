@@ -4,8 +4,6 @@ productName: "KE系列型铅烟净化器"
 
 category: "gas"
 
-thumbnail: "/assets/img/products/gas/ke-purifier-thumb.jpg"
-
 images:
 
 &nbsp; - "/assets/img/products/gas/ke-purifier-1.jpg"

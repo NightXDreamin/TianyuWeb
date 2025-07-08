@@ -10,23 +10,55 @@
 </head>
 <body>
     <script src="/assets/js/header.js"></script>
-    <main class="product-detail-page">
-        <section class="device-hero">
+
+        <section class="device-detail">
             <div class="container">
-                <h1>{{PRODUCT_NAME}}</h1>
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        {{THUMBNAIL_LIST}}
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="{{FIRST_IMAGE}}" alt="{{PRODUCT_NAME}} 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>{{PRODUCT_NAME}}</h1>
+                    <div class="product-description">{{PRODUCT_SHORT_DESCRIPTION}}</div>
+                </div>
             </div>
         </section>
-        <section class="device-images">
-            <div class="container image-grid">
-                {{IMAGE_GALLERY}}
-            </div>
-        </section>
+
         <section class="device-description">
             <div class="container">
                 {{PRODUCT_CONTENT}}
             </div>
         </section>
-    </main>
+
     <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>

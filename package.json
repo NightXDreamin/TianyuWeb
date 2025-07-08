@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.3.0",
+    "marked": "^16.0.0"
+  },
+  "name": "tianyuweb",
+  "version": "1.0.0",
+  "description": "Tianyuhuanbao'sWebsite",
+  "main": "generate-products.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NightXDreamin/TianyuWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NightXDreamin/TianyuWeb/issues"
+  },
+  "homepage": "https://github.com/NightXDreamin/TianyuWeb#readme"
+}

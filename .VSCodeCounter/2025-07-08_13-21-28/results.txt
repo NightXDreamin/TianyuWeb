@@ -1,0 +1,89 @@
+Date : 2025-07-08 13:21:28
+Directory : c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb
+Total : 41 files,  2994 codes, 118 comments, 312 blanks, all 3424 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |         16 |      1,290 |         81 |        105 |      1,476 |
+| HTML       |         12 |      1,156 |          0 |        134 |      1,290 |
+| JavaScript |          5 |        366 |         37 |         53 |        456 |
+| JSON       |          4 |        166 |          0 |          2 |        168 |
+| Markdown   |          3 |         13 |          0 |         18 |         31 |
+| XML        |          1 |          3 |          0 |          0 |          3 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                   | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                      |         41 |      2,994 |        118 |        312 |      3,424 |
+| . (Files)                                                                                              |          3 |         84 |          6 |         16 |        106 |
+| src_products                                                                                           |          2 |         11 |          0 |         17 |         28 |
+| src_products (Files)                                                                                   |          1 |         11 |          0 |         16 |         27 |
+| src_products\gas                                                                                       |          1 |          0 |          0 |          1 |          1 |
+| web                                                                                                    |         36 |      2,899 |        112 |        279 |      3,290 |
+| web (Files)                                                                                            |         12 |      1,052 |          0 |        104 |      1,156 |
+| web\assets                                                                                             |         20 |      1,606 |        112 |        143 |      1,861 |
+| web\assets\css                                                                                         |         16 |      1,290 |         81 |        105 |      1,476 |
+| web\assets\css (Files)                                                                                 |          1 |         16 |          6 |          4 |         26 |
+| web\assets\css\base                                                                                    |          3 |         56 |          0 |          0 |         56 |
+| web\assets\css\components                                                                              |          3 |        294 |          9 |         11 |        314 |
+| web\assets\css\layout                                                                                  |          2 |         91 |          9 |         12 |        112 |
+| web\assets\css\pages                                                                                   |          7 |        833 |         57 |         78 |        968 |
+| web\assets\css\pages (Files)                                                                           |          6 |        775 |         50 |         70 |        895 |
+| web\assets\css\pages\products                                                                          |          1 |         58 |          7 |          8 |         73 |
+| web\assets\js                                                                                          |          4 |        316 |         31 |         38 |        385 |
+| web\product_lib                                                                                        |          4 |        241 |          0 |         32 |        273 |
+| web\product_lib\gas                                                                                    |          3 |        147 |          0 |         23 |        170 |
+| web\product_lib\water                                                                                  |          1 |         94 |          0 |          9 |        103 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                               | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\README.md                                           | Markdown   |          2 |          0 |          1 |          3 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\generate-products.js                                | JavaScript |         50 |          6 |         15 |         71 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\product-template.html                               | HTML       |         32 |          0 |          0 |         32 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\src_products\gas\ke-series-purifier.md              | Markdown   |          0 |          0 |          1 |          1 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\src_products\md_template.md                         | Markdown   |         11 |          0 |         16 |         27 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\about.html                                      | HTML       |        176 |          0 |         20 |        196 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\base\_reset.css                      | PostCSS    |         15 |          0 |          0 |         15 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\base\_typography.css                 | PostCSS    |         28 |          0 |          0 |         28 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\base\_variables.css                  | PostCSS    |         13 |          0 |          0 |         13 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\components\_buttons.css              | PostCSS    |         28 |          0 |          0 |         28 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\components\_cards.css                | PostCSS    |         62 |          3 |          2 |         67 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\components\_header-footer.css        | PostCSS    |        204 |          6 |          9 |        219 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\layout\_grid.css                     | PostCSS    |         14 |          0 |          0 |         14 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\layout\_responsive.css               | PostCSS    |         77 |          9 |         12 |         98 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\main.css                             | PostCSS    |         16 |          6 |          4 |         26 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_about.css                     | PostCSS    |        210 |          9 |          8 |        227 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_cases.css                     | PostCSS    |         99 |          6 |          4 |        109 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_contact.css                   | PostCSS    |        138 |          8 |          7 |        153 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_index.css                     | PostCSS    |        203 |         16 |         22 |        241 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_products.css                  | PostCSS    |         58 |          5 |         13 |         76 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_services.css                  | PostCSS    |         67 |          6 |         16 |         89 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\products\_product-category.css | PostCSS    |         58 |          7 |          8 |         73 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\js\contact-map.js                        | JavaScript |         61 |          9 |         10 |         80 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\js\footer.js                             | JavaScript |         78 |          1 |          1 |         80 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\js\header.js                             | JavaScript |         58 |          0 |          0 |         58 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\js\main.js                               | JavaScript |        119 |         21 |         27 |        167 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\cases.html                                      | HTML       |        115 |          0 |         14 |        129 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\contact.html                                    | HTML       |        100 |          0 |         13 |        113 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\favicon.svg                                     | XML        |          3 |          0 |          0 |          3 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\index.html                                      | HTML       |        202 |          0 |         19 |        221 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\manifest.json                                   | JSON       |         21 |          0 |          0 |         21 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\ongoing.html                                    | HTML       |         57 |          0 |          7 |         64 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\package-lock.json                               | JSON       |        117 |          0 |          1 |        118 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\package.json                                    | JSON       |          7 |          0 |          1 |          8 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\product_lib\gas\gas-absorption-tower.html       | HTML       |         43 |          0 |          9 |         52 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\product_lib\gas\index.html                      | HTML       |         58 |          0 |          5 |         63 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\product_lib\gas\ke-series-purifier.html         | HTML       |         46 |          0 |          9 |         55 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\product_lib\water\index.html                    | HTML       |         94 |          0 |          9 |        103 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\products.html                                   | HTML       |        105 |          0 |         15 |        120 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\services.html                                   | HTML       |        128 |          0 |         14 |        142 |
+| c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\site.webmanifest                                | JSON       |         21 |          0 |          0 |         21 |
+| Total                                                                                                  |            |      2,994 |        118 |        312 |      3,424 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
