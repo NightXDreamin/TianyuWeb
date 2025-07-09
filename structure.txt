@@ -1,0 +1,1083 @@
+文件夹 PATH 列表
+卷序列号为 6808-3F4A
+C:.
+│  .gitattributes
+│  generate-products.js
+│  output.txt
+│  package-lock.json
+│  package.json
+│  product-template.html
+│  README.md
+│  structure.txt
+│  
+├─.vscode
+│      settings.json
+│      
+├─.VSCodeCounter
+│  ├─2025-07-08_13-14-48
+│  │      details.md
+│  │      diff-details.md
+│  │      diff.csv
+│  │      diff.md
+│  │      diff.txt
+│  │      results.csv
+│  │      results.json
+│  │      results.md
+│  │      results.txt
+│  │      
+│  ├─2025-07-08_13-21-28
+│  │      details.md
+│  │      diff-details.md
+│  │      diff.csv
+│  │      diff.md
+│  │      diff.txt
+│  │      results.csv
+│  │      results.json
+│  │      results.md
+│  │      results.txt
+│  │      
+│  └─2025-07-08_17-33-40
+│          details.md
+│          diff-details.md
+│          diff.csv
+│          diff.md
+│          diff.txt
+│          results.csv
+│          results.json
+│          results.md
+│          results.txt
+│          
+├─node_modules
+│  │  .package-lock.json
+│  │  
+│  ├─.bin
+│  │      esparse
+│  │      esparse.cmd
+│  │      esparse.ps1
+│  │      esvalidate
+│  │      esvalidate.cmd
+│  │      esvalidate.ps1
+│  │      js-yaml
+│  │      js-yaml.cmd
+│  │      js-yaml.ps1
+│  │      marked
+│  │      marked.cmd
+│  │      marked.ps1
+│  │      
+│  ├─argparse
+│  │  │  CHANGELOG.md
+│  │  │  index.js
+│  │  │  LICENSE
+│  │  │  package.json
+│  │  │  README.md
+│  │  │  
+│  │  └─lib
+│  │      │  action.js
+│  │      │  action_container.js
+│  │      │  argparse.js
+│  │      │  argument_parser.js
+│  │      │  const.js
+│  │      │  namespace.js
+│  │      │  utils.js
+│  │      │  
+│  │      ├─action
+│  │      │  │  append.js
+│  │      │  │  count.js
+│  │      │  │  help.js
+│  │      │  │  store.js
+│  │      │  │  subparsers.js
+│  │      │  │  version.js
+│  │      │  │  
+│  │      │  ├─append
+│  │      │  │      constant.js
+│  │      │  │      
+│  │      │  └─store
+│  │      │          constant.js
+│  │      │          false.js
+│  │      │          true.js
+│  │      │          
+│  │      ├─argument
+│  │      │      error.js
+│  │      │      exclusive.js
+│  │      │      group.js
+│  │      │      
+│  │      └─help
+│  │              added_formatters.js
+│  │              formatter.js
+│  │              
+│  ├─esprima
+│  │  │  ChangeLog
+│  │  │  LICENSE.BSD
+│  │  │  package.json
+│  │  │  README.md
+│  │  │  
+│  │  ├─bin
+│  │  │      esparse.js
+│  │  │      esvalidate.js
+│  │  │      
+│  │  └─dist
+│  │          esprima.js
+│  │          
+│  ├─front-matter
+│  │      index.d.ts
+│  │      index.js
+│  │      LICENSE
+│  │      package.json
+│  │      README.md
+│  │      
+│  ├─fs-extra
+│  │  │  LICENSE
+│  │  │  package.json
+│  │  │  README.md
+│  │  │  
+│  │  └─lib
+│  │      │  esm.mjs
+│  │      │  index.js
+│  │      │  
+│  │      ├─copy
+│  │      │      copy-sync.js
+│  │      │      copy.js
+│  │      │      index.js
+│  │      │      
+│  │      ├─empty
+│  │      │      index.js
+│  │      │      
+│  │      ├─ensure
+│  │      │      file.js
+│  │      │      index.js
+│  │      │      link.js
+│  │      │      symlink-paths.js
+│  │      │      symlink-type.js
+│  │      │      symlink.js
+│  │      │      
+│  │      ├─fs
+│  │      │      index.js
+│  │      │      
+│  │      ├─json
+│  │      │      index.js
+│  │      │      jsonfile.js
+│  │      │      output-json-sync.js
+│  │      │      output-json.js
+│  │      │      
+│  │      ├─mkdirs
+│  │      │      index.js
+│  │      │      make-dir.js
+│  │      │      utils.js
+│  │      │      
+│  │      ├─move
+│  │      │      index.js
+│  │      │      move-sync.js
+│  │      │      move.js
+│  │      │      
+│  │      ├─output-file
+│  │      │      index.js
+│  │      │      
+│  │      ├─path-exists
+│  │      │      index.js
+│  │      │      
+│  │      ├─remove
+│  │      │      index.js
+│  │      │      
+│  │      └─util
+│  │              stat.js
+│  │              utimes.js
+│  │              
+│  ├─graceful-fs
+│  │      clone.js
+│  │      graceful-fs.js
+│  │      legacy-streams.js
+│  │      LICENSE
+│  │      package.json
+│  │      polyfills.js
+│  │      README.md
+│  │      
+│  ├─js-yaml
+│  │  │  CHANGELOG.md
+│  │  │  index.js
+│  │  │  LICENSE
+│  │  │  package.json
+│  │  │  README.md
+│  │  │  
+│  │  ├─bin
+│  │  │      js-yaml.js
+│  │  │      
+│  │  ├─dist
+│  │  │      js-yaml.js
+│  │  │      js-yaml.min.js
+│  │  │      
+│  │  └─lib
+│  │      │  js-yaml.js
+│  │      │  
+│  │      └─js-yaml
+│  │          │  common.js
+│  │          │  dumper.js
+│  │          │  exception.js
+│  │          │  loader.js
+│  │          │  mark.js
+│  │          │  schema.js
+│  │          │  type.js
+│  │          │  
+│  │          ├─schema
+│  │          │      core.js
+│  │          │      default_full.js
+│  │          │      default_safe.js
+│  │          │      failsafe.js
+│  │          │      json.js
+│  │          │      
+│  │          └─type
+│  │              │  binary.js
+│  │              │  bool.js
+│  │              │  float.js
+│  │              │  int.js
+│  │              │  map.js
+│  │              │  merge.js
+│  │              │  null.js
+│  │              │  omap.js
+│  │              │  pairs.js
+│  │              │  seq.js
+│  │              │  set.js
+│  │              │  str.js
+│  │              │  timestamp.js
+│  │              │  
+│  │              └─js
+│  │                      function.js
+│  │                      regexp.js
+│  │                      undefined.js
+│  │                      
+│  ├─jsonfile
+│  │      CHANGELOG.md
+│  │      index.js
+│  │      LICENSE
+│  │      package.json
+│  │      README.md
+│  │      utils.js
+│  │      
+│  ├─marked
+│  │  │  LICENSE.md
+│  │  │  package.json
+│  │  │  README.md
+│  │  │  
+│  │  ├─bin
+│  │  │      main.js
+│  │  │      marked.js
+│  │  │      
+│  │  ├─lib
+│  │  │      marked.d.ts
+│  │  │      marked.esm.js
+│  │  │      marked.esm.js.map
+│  │  │      marked.umd.js
+│  │  │      marked.umd.js.map
+│  │  │      
+│  │  └─man
+│  │          marked.1
+│  │          marked.1.md
+│  │          
+│  ├─sprintf-js
+│  │  │  .npmignore
+│  │  │  bower.json
+│  │  │  gruntfile.js
+│  │  │  LICENSE
+│  │  │  package.json
+│  │  │  README.md
+│  │  │  
+│  │  ├─demo
+│  │  │      angular.html
+│  │  │      
+│  │  ├─dist
+│  │  │      angular-sprintf.min.js
+│  │  │      angular-sprintf.min.js.map
+│  │  │      angular-sprintf.min.map
+│  │  │      sprintf.min.js
+│  │  │      sprintf.min.js.map
+│  │  │      sprintf.min.map
+│  │  │      
+│  │  ├─src
+│  │  │      angular-sprintf.js
+│  │  │      sprintf.js
+│  │  │      
+│  │  └─test
+│  │          test.js
+│  │          
+│  └─universalify
+│          index.js
+│          LICENSE
+│          package.json
+│          README.md
+│          
+├─src_products
+│  │  generate_md.py
+│  │  md_template.md
+│  │  template.txt
+│  │  
+│  ├─disinfection
+│  │      Automatic_dry_powder_feeders.md
+│  │      Chlorine_dioxide_generators_chemical_method.md
+│  │      Chlorine_dioxide_generators_electrolytic.md
+│  │      Electronic_scale_removal_devices.md
+│  │      Fully_automatic_chemical_dosing_skids.md
+│  │      General_chemical_dosing_units.md
+│  │      In_line_static_mixers.md
+│  │      Ozone_generators.md
+│  │      Powder_metering_feeders.md
+│  │      Power_plant_chemical_feed_systems.md
+│  │      Sodium_hypochlorite_generators.md
+│  │      Submersible_dosing_systems.md
+│  │      UV_disinfection_reactors.md
+│  │      WA_series_dosing_skids.md
+│  │      
+│  ├─dust
+│  │      Cyclone_dust_collectors.md
+│  │      Electrostatic_precipitators_ESP.md
+│  │      High_efficiency_wet_film_scrubbers.md
+│  │      
+│  ├─gas
+│  │      Acid_alkali_gas_scrubbing_towers.md
+│  │      Flue_gas_desulfurization_denitrification_equipment.md
+│  │      ke-series-purifier.md
+│  │      Odor_control_deodorization_units.md
+│  │      Packed_bed_exhaust_gas_scrubbers.md
+│  │      Thermal_oxidizers_incinerators.md
+│  │      
+│  ├─parts
+│  │      ABS_strainers_filter_nozzles.md
+│  │      Active_bio_media_moving_bed.md
+│  │      Adjustable_weir_gates.md
+│  │      Alumina_ceramic_balls.md
+│  │      Anthracite_filter_media.md
+│  │      Braided_rope_packing.md
+│  │      Cast_iron_round_gates_bronze_seated.md
+│  │      Cast_iron_square_gates_bronze_seated.md
+│  │      Cast_iron_tide_flap_gates.md
+│  │      Ceramic_ceramsite_filter_media.md
+│  │      Ceramic_Raschig_rings.md
+│  │      Corrugated_structured_packing.md
+│  │      Double_ring_combined_packing.md
+│  │      Drift_mist_eliminators.md
+│  │      Flat_slide_gates.md
+│  │      Flexible_elastic_bio_filler.md
+│  │      FRP_cover_panels.md
+│  │      FRP_ductwork.md
+│  │      FRP_filament_wound_storage_tanks.md
+│  │      FRP_storage_vessels.md
+│  │      Fully_sealed_sanitary_metal_water_tanks.md
+│  │      Gate_hoist_mechanisms.md
+│  │      Hexagonal_honeycomb_media.md
+│  │      Hollow_plastic_balls.md
+│  │      PAC_coagulant.md
+│  │      Plastic_Pall_flower_rings.md
+│  │      Pressure_resistant_corrosion_proof_tanks.md
+│  │      Sectional_welded_stainless_steel_water_tanks.md
+│  │      Semi_soft_packing_media.md
+│  │      Silica_sand_filter_media.md
+│  │      Skylight_domes_daylighting_covers.md
+│  │      Spherical_water_tanks.md
+│  │      Spray_nozzles_various_types.md
+│  │      Square_grid_packing.md
+│  │      Stainless_steel_sanitary_water_tanks.md
+│  │      Stainless_steel_sluice_gates.md
+│  │      Stainless_steel_wedge_wire_screens.md
+│  │      Step_rings.md
+│  │      Vertical_insulated_water_tanks.md
+│  │      
+│  ├─water
+│  │      Anaerobic_treatment_reactors.md
+│  │      Automatic_clarifiers.md
+│  │      Belt_conveyors.md
+│  │      Belt_filter_presses.md
+│  │      Biological_contact_oxidation_towers.md
+│  │      BS_type_air_flotation_units.md
+│  │      Buried_FRP_packaged_sewage_plants.md
+│  │      Buried_steel_packaged_sewage_plants.md
+│  │      Cable_drive_sludge_scrapers.md
+│  │      Cable_operated_trash_rakes.md
+│  │      Cavitation_air_flotation_units.md
+│  │      Center_drive_clarifier_scrapers.md
+│  │      Chamber_plate_and_frame_filter_presses.md
+│  │      Curved_bar_screens.md
+│  │      Decanter_centrifuges.md
+│  │      Dissolved_air_flotation_DAF_clarifiers.md
+│  │      Emulsion_wastewater_treatment_skids.md
+│  │      Full_bridge_peripheral_drive_sludge_scrapers_circular_clarifiers.md
+│  │      General_purpose_mixing_agitators.md
+│  │      Grit_classifiers_sand_water_separators.md
+│  │      High_speed_clarifier_mixers.md
+│  │      Horizontal_screw_discharge_settling_centrifuges.md
+│  │      Inclined_tube_settlers.md
+│  │      Integrated_air_flotation_units.md
+│  │      In_line_grinder_screens_comminutors.md
+│  │      Lamella_plate_clarifiers.md
+│  │      Land_based_oil_water_separators.md
+│  │      Low_speed_propeller_mixers_axial_flow.md
+│  │      MBR_membrane_bioreactor_packages.md
+│  │      Mechanical_bar_screens.md
+│  │      Radial_flow_clarifier_peripheral_drive_scraper_with_direct_discharge.md
+│  │      Rotary_drum_fine_screens.md
+│  │      Rotary_shear_flotation_cells.md
+│  │      Screw_press_compactors.md
+│  │      Shaftless_screw_conveyors.md
+│  │      Shallow_tank_high_efficiency_DAF_units.md
+│  │      Siphon_suction_sludge_collectors.md
+│  │      Slaughterhouse_wastewater_systems.md
+│  │      Submersible_mixers.md
+│  │      Suction_type_sludge_collectors_for_rectangular_tanks.md
+│  │      Surface_oil_skimmers.md
+│  │      Surface_skimmers_scum_skimmers.md
+│  │      Traveling_bridge_sludge_scrapers.md
+│  │      Traveling_chain_rotary_bar_screens.md
+│  │      Up_flow_clarifiers.md
+│  │      Vortex_flow_grit_chambers.md
+│  │      
+│  └─water_supply
+│          Activated_carbon_filters.md
+│          All_in_one_water_conditioning_devices.md
+│          Ambient_temperature_deaerators.md
+│          Anion_and_cation_exchange_units.md
+│          Automatic_pneumatic_booster_pump_systems.md
+│          Blow_down_back_flush_filters.md
+│          Cartridge_precision_polishing_filters.md
+│          CO2_stripping_degassing_towers.md
+│          Continuous_sand_filters.md
+│          EDL_electro_deionization_units.md
+│          Fiber_ball_filters.md
+│          Fiber_bundle_filters.md
+│          Fluoride_removal_skids.md
+│          Fountain_equipment_various_styles.md
+│          Fully_automatic_back_wash_filters.md
+│          Fully_automatic_water_purifiers.md
+│          Fully_automatic_water_softening_systems.md
+│          Guard_security_filters.md
+│          High_efficiency_pressure_filters.md
+│          High_rate_medium_rate_filters.md
+│          High_voltage_electrostatic_water_conditioners.md
+│          Ion_exchange_vessels.md
+│          Iron_and_manganese_removal_filters.md
+│          Israeli_ARKAL_disc_filters.md
+│          JM_automatic_softeners.md
+│          KG_L_series_water_purifiers.md
+│          Large_scale_desalination_turn_key_plants.md
+│          Manual_brush_type_filters.md
+│          Mixed_bed_anion_cation_floating_bed_exchangers.md
+│          Modular_softening_skids.md
+│          Multimedia_pressure_sand_filters.md
+│          New_gravity_gap_free_filters.md
+│          Package_compact_water_treatment_units.md
+│          Pool_recirculation_equipment.md
+│          Reverse_osmosis_RO_desalination_systems.md
+│          Self_cleaning_back_wash_filters.md
+│          Shallow_bed_filters.md
+│          Sludge_water_separators.md
+│          Swimming_pool_filters.md
+│          Thermal_deaerators.md
+│          Ultrafiltration_UF_skids.md
+│          Vacuum_deaerators.md
+│          VFD_constant_pressure_booster_systems.md
+│          Walnut_shell_media_filters.md
+│          
+└─web
+    │  about.html
+    │  apple-touch-icon.png
+    │  cases.html
+    │  contact.html
+    │  favicon-96x96.png
+    │  favicon.ico
+    │  favicon.svg
+    │  index.html
+    │  manifest.json
+    │  ongoing.html
+    │  package-lock.json
+    │  package.json
+    │  products.html
+    │  services.html
+    │  site.webmanifest
+    │  
+    ├─assets
+    │  ├─css
+    │  │  │  main.css
+    │  │  │  
+    │  │  ├─base
+    │  │  │      _reset.css
+    │  │  │      _typography.css
+    │  │  │      _variables.css
+    │  │  │      
+    │  │  ├─components
+    │  │  │      _buttons.css
+    │  │  │      _cards.css
+    │  │  │      _header-footer.css
+    │  │  │      
+    │  │  ├─layout
+    │  │  │      _grid.css
+    │  │  │      _responsive.css
+    │  │  │      
+    │  │  └─pages
+    │  │      │  _about.css
+    │  │      │  _cases.css
+    │  │      │  _contact.css
+    │  │      │  _index.css
+    │  │      │  _products.css
+    │  │      │  _services.css
+    │  │      │  
+    │  │      └─products
+    │  │              gas.css
+    │  │              _product-category.css
+    │  │              
+    │  ├─fonts
+    │  │      songketi.ttf
+    │  │      
+    │  ├─img
+    │  │  │  1406前台.png
+    │  │  │  advantage.png
+    │  │  │  logo.png
+    │  │  │  Logo带文字窄.png
+    │  │  │  一体化污水处理设备.png
+    │  │  │  公众号二维码.png
+    │  │  │  关于我们封面.png
+    │  │  │  凯旋门.png
+    │  │  │  占位图.png
+    │  │  │  吊装脱硫塔.png
+    │  │  │  夜晚装车.png
+    │  │  │  奖状墙.png
+    │  │  │  封面1.png
+    │  │  │  封面2改版.png
+    │  │  │  封面3.png
+    │  │  │  工厂照片.png
+    │  │  │  工地远景.png
+    │  │  │  巨型脱硫塔.png
+    │  │  │  布袋除尘器.png
+    │  │  │  布袋除尘器2.png
+    │  │  │  带logo占位图.png
+    │  │  │  废气.png
+    │  │  │  废水.png
+    │  │  │  技术部.png
+    │  │  │  气浮机.png
+    │  │  │  污水站.png
+    │  │  │  油烟.png
+    │  │  │  活性炭UV光氧一体机.png
+    │  │  │  活性炭吸附设备.png
+    │  │  │  消音器.png
+    │  │  │  滤筒除尘器.png
+    │  │  │  烘干塔.png
+    │  │  │  现场考察.png
+    │  │  │  远景脱硫塔.png
+    │  │  │  锅炉厂内部.png
+    │  │  │  除尘.png
+    │  │  │  
+    │  │  ├─cases
+    │  │  │      东海屠宰厂废水.png
+    │  │  │      噪声例子.png
+    │  │  │      新疆冠通废气.png
+    │  │  │      污水站例子.png
+    │  │  │      经开二附院噪声.png
+    │  │  │      通许县厉庄乡污水站.png
+    │  │  │      除尘例子.png
+    │  │  │      
+    │  │  ├─clientlogo
+    │  │  │      东方肿瘤医院.png
+    │  │  │      中储粮油.png
+    │  │  │      中铁大桥局第一工程.png
+    │  │  │      中铝矿业.png
+    │  │  │      伊犁冠通.png
+    │  │  │      吉祥实业.png
+    │  │  │      大咖国际.png
+    │  │  │      天泽混凝土.png
+    │  │  │      宏科重工.png
+    │  │  │      新鸽摩托.png
+    │  │  │      洛阳源氏食品.png
+    │  │  │      爱尔眼科.png
+    │  │  │      瑞龙制药.png
+    │  │  │      福耀玻璃.png
+    │  │  │      管城中医院.png
+    │  │  │      腾势汽车.png
+    │  │  │      蜜雪冰城.png
+    │  │  │      豪享来.png
+    │  │  │      豪士面包.png
+    │  │  │      郑大二附院.png
+    │  │  │      郑大五附院.png
+    │  │  │      郑州三晖电气.png
+    │  │  │      郑州妇幼保健院.png
+    │  │  │      郑州市七院.png
+    │  │  │      郑州市三院.png
+    │  │  │      郑州市二院.png
+    │  │  │      郑州润星.png
+    │  │  │      香雪儿食品.png
+    │  │  │      麦当劳.png
+    │  │  │      黄金叶.png
+    │  │  │      
+    │  │  ├─honor
+    │  │  │      315荣誉证书.png
+    │  │  │      二氧化氯发生器专利.png
+    │  │  │      安全生产.png
+    │  │  │      布袋除尘器专利.png
+    │  │  │      建筑资质.png
+    │  │  │      河南省环保协会理事会员证.png
+    │  │  │      环境管理认证书.png
+    │  │  │      脱硫除尘塔专利.png
+    │  │  │      营业执照.png
+    │  │  │      诚信经营示范单位.png
+    │  │  │      质量管理认证书.png
+    │  │  │      运维资质甲级证书.png
+    │  │  │      
+    │  │  ├─products
+    │  │  │  │  废气管道.png
+    │  │  │  │  污水站池子.png
+    │  │  │  │  消毒桶.png
+    │  │  │  │  蓄水池.png
+    │  │  │  │  蜂窝填料.png
+    │  │  │  │  除尘塔.png
+    │  │  │  │  
+    │  │  │  └─gas
+    │  │  │          ke-purifier_data.png
+    │  │  │          ke-purifier_img.png
+    │  │  │          
+    │  │  └─services
+    │  │          制造.png
+    │  │          咨询.png
+    │  │          培训.png
+    │  │          安装.png
+    │  │          施工.png
+    │  │          检测.png
+    │  │          
+    │  └─js
+    │          contact-map.js
+    │          footer.js
+    │          header.js
+    │          main.js
+    │          
+    ├─node_modules
+    │  │  .package-lock.json
+    │  │  
+    │  ├─.bin
+    │  │      esparse
+    │  │      esparse.cmd
+    │  │      esparse.ps1
+    │  │      esvalidate
+    │  │      esvalidate.cmd
+    │  │      esvalidate.ps1
+    │  │      js-yaml
+    │  │      js-yaml.cmd
+    │  │      js-yaml.ps1
+    │  │      marked
+    │  │      marked.cmd
+    │  │      marked.ps1
+    │  │      
+    │  ├─argparse
+    │  │  │  CHANGELOG.md
+    │  │  │  index.js
+    │  │  │  LICENSE
+    │  │  │  package.json
+    │  │  │  README.md
+    │  │  │  
+    │  │  └─lib
+    │  │      │  action.js
+    │  │      │  action_container.js
+    │  │      │  argparse.js
+    │  │      │  argument_parser.js
+    │  │      │  const.js
+    │  │      │  namespace.js
+    │  │      │  utils.js
+    │  │      │  
+    │  │      ├─action
+    │  │      │  │  append.js
+    │  │      │  │  count.js
+    │  │      │  │  help.js
+    │  │      │  │  store.js
+    │  │      │  │  subparsers.js
+    │  │      │  │  version.js
+    │  │      │  │  
+    │  │      │  ├─append
+    │  │      │  │      constant.js
+    │  │      │  │      
+    │  │      │  └─store
+    │  │      │          constant.js
+    │  │      │          false.js
+    │  │      │          true.js
+    │  │      │          
+    │  │      ├─argument
+    │  │      │      error.js
+    │  │      │      exclusive.js
+    │  │      │      group.js
+    │  │      │      
+    │  │      └─help
+    │  │              added_formatters.js
+    │  │              formatter.js
+    │  │              
+    │  ├─esprima
+    │  │  │  ChangeLog
+    │  │  │  LICENSE.BSD
+    │  │  │  package.json
+    │  │  │  README.md
+    │  │  │  
+    │  │  ├─bin
+    │  │  │      esparse.js
+    │  │  │      esvalidate.js
+    │  │  │      
+    │  │  └─dist
+    │  │          esprima.js
+    │  │          
+    │  ├─front-matter
+    │  │      index.d.ts
+    │  │      index.js
+    │  │      LICENSE
+    │  │      package.json
+    │  │      README.md
+    │  │      
+    │  ├─fs-extra
+    │  │  │  LICENSE
+    │  │  │  package.json
+    │  │  │  README.md
+    │  │  │  
+    │  │  └─lib
+    │  │      │  esm.mjs
+    │  │      │  index.js
+    │  │      │  
+    │  │      ├─copy
+    │  │      │      copy-sync.js
+    │  │      │      copy.js
+    │  │      │      index.js
+    │  │      │      
+    │  │      ├─empty
+    │  │      │      index.js
+    │  │      │      
+    │  │      ├─ensure
+    │  │      │      file.js
+    │  │      │      index.js
+    │  │      │      link.js
+    │  │      │      symlink-paths.js
+    │  │      │      symlink-type.js
+    │  │      │      symlink.js
+    │  │      │      
+    │  │      ├─fs
+    │  │      │      index.js
+    │  │      │      
+    │  │      ├─json
+    │  │      │      index.js
+    │  │      │      jsonfile.js
+    │  │      │      output-json-sync.js
+    │  │      │      output-json.js
+    │  │      │      
+    │  │      ├─mkdirs
+    │  │      │      index.js
+    │  │      │      make-dir.js
+    │  │      │      utils.js
+    │  │      │      
+    │  │      ├─move
+    │  │      │      index.js
+    │  │      │      move-sync.js
+    │  │      │      move.js
+    │  │      │      
+    │  │      ├─output-file
+    │  │      │      index.js
+    │  │      │      
+    │  │      ├─path-exists
+    │  │      │      index.js
+    │  │      │      
+    │  │      ├─remove
+    │  │      │      index.js
+    │  │      │      
+    │  │      └─util
+    │  │              stat.js
+    │  │              utimes.js
+    │  │              
+    │  ├─graceful-fs
+    │  │      clone.js
+    │  │      graceful-fs.js
+    │  │      legacy-streams.js
+    │  │      LICENSE
+    │  │      package.json
+    │  │      polyfills.js
+    │  │      README.md
+    │  │      
+    │  ├─js-yaml
+    │  │  │  CHANGELOG.md
+    │  │  │  index.js
+    │  │  │  LICENSE
+    │  │  │  package.json
+    │  │  │  README.md
+    │  │  │  
+    │  │  ├─bin
+    │  │  │      js-yaml.js
+    │  │  │      
+    │  │  ├─dist
+    │  │  │      js-yaml.js
+    │  │  │      js-yaml.min.js
+    │  │  │      
+    │  │  └─lib
+    │  │      │  js-yaml.js
+    │  │      │  
+    │  │      └─js-yaml
+    │  │          │  common.js
+    │  │          │  dumper.js
+    │  │          │  exception.js
+    │  │          │  loader.js
+    │  │          │  mark.js
+    │  │          │  schema.js
+    │  │          │  type.js
+    │  │          │  
+    │  │          ├─schema
+    │  │          │      core.js
+    │  │          │      default_full.js
+    │  │          │      default_safe.js
+    │  │          │      failsafe.js
+    │  │          │      json.js
+    │  │          │      
+    │  │          └─type
+    │  │              │  binary.js
+    │  │              │  bool.js
+    │  │              │  float.js
+    │  │              │  int.js
+    │  │              │  map.js
+    │  │              │  merge.js
+    │  │              │  null.js
+    │  │              │  omap.js
+    │  │              │  pairs.js
+    │  │              │  seq.js
+    │  │              │  set.js
+    │  │              │  str.js
+    │  │              │  timestamp.js
+    │  │              │  
+    │  │              └─js
+    │  │                      function.js
+    │  │                      regexp.js
+    │  │                      undefined.js
+    │  │                      
+    │  ├─jsonfile
+    │  │      CHANGELOG.md
+    │  │      index.js
+    │  │      LICENSE
+    │  │      package.json
+    │  │      README.md
+    │  │      utils.js
+    │  │      
+    │  ├─marked
+    │  │  │  LICENSE.md
+    │  │  │  package.json
+    │  │  │  README.md
+    │  │  │  
+    │  │  ├─bin
+    │  │  │      main.js
+    │  │  │      marked.js
+    │  │  │      
+    │  │  ├─lib
+    │  │  │      marked.d.ts
+    │  │  │      marked.esm.js
+    │  │  │      marked.esm.js.map
+    │  │  │      marked.umd.js
+    │  │  │      marked.umd.js.map
+    │  │  │      
+    │  │  └─man
+    │  │          marked.1
+    │  │          marked.1.md
+    │  │          
+    │  ├─sprintf-js
+    │  │  │  .npmignore
+    │  │  │  bower.json
+    │  │  │  gruntfile.js
+    │  │  │  LICENSE
+    │  │  │  package.json
+    │  │  │  README.md
+    │  │  │  
+    │  │  ├─demo
+    │  │  │      angular.html
+    │  │  │      
+    │  │  ├─dist
+    │  │  │      angular-sprintf.min.js
+    │  │  │      angular-sprintf.min.js.map
+    │  │  │      angular-sprintf.min.map
+    │  │  │      sprintf.min.js
+    │  │  │      sprintf.min.js.map
+    │  │  │      sprintf.min.map
+    │  │  │      
+    │  │  ├─src
+    │  │  │      angular-sprintf.js
+    │  │  │      sprintf.js
+    │  │  │      
+    │  │  └─test
+    │  │          test.js
+    │  │          
+    │  └─universalify
+    │          index.js
+    │          LICENSE
+    │          package.json
+    │          README.md
+    │          
+    ├─product_categories
+    │      disinfection.html
+    │      dust-treatment.html
+    │      gas-treatment.html
+    │      parts.html
+    │      wastewater-treatment.html
+    │      water-supply.html
+    │      
+    └─product_lib
+        ├─disinfection
+        │      Automatic_dry_powder_feeders.html
+        │      Chlorine_dioxide_generators_chemical_method.html
+        │      Chlorine_dioxide_generators_electrolytic.html
+        │      Electronic_scale_removal_devices.html
+        │      Fully_automatic_chemical_dosing_skids.html
+        │      General_chemical_dosing_units.html
+        │      In_line_static_mixers.html
+        │      Ozone_generators.html
+        │      Powder_metering_feeders.html
+        │      Power_plant_chemical_feed_systems.html
+        │      products.json
+        │      Sodium_hypochlorite_generators.html
+        │      Submersible_dosing_systems.html
+        │      UV_disinfection_reactors.html
+        │      WA_series_dosing_skids.html
+        │      
+        ├─dust
+        │      Cyclone_dust_collectors.html
+        │      Electrostatic_precipitators_ESP.html
+        │      High_efficiency_wet_film_scrubbers.html
+        │      products.json
+        │      
+        ├─gas
+        │      Acid_alkali_gas_scrubbing_towers.html
+        │      Flue_gas_desulfurization_denitrification_equipment.html
+        │      gas-absorption-tower.html
+        │      index.php
+        │      ke-series-purifier.html
+        │      Odor_control_deodorization_units.html
+        │      Packed_bed_exhaust_gas_scrubbers.html
+        │      products.json
+        │      Thermal_oxidizers_incinerators.html
+        │      
+        ├─parts
+        │      ABS_strainers_filter_nozzles.html
+        │      Active_bio_media_moving_bed.html
+        │      Adjustable_weir_gates.html
+        │      Alumina_ceramic_balls.html
+        │      Anthracite_filter_media.html
+        │      Braided_rope_packing.html
+        │      Cast_iron_round_gates_bronze_seated.html
+        │      Cast_iron_square_gates_bronze_seated.html
+        │      Cast_iron_tide_flap_gates.html
+        │      Ceramic_ceramsite_filter_media.html
+        │      Ceramic_Raschig_rings.html
+        │      Corrugated_structured_packing.html
+        │      Double_ring_combined_packing.html
+        │      Drift_mist_eliminators.html
+        │      Flat_slide_gates.html
+        │      Flexible_elastic_bio_filler.html
+        │      FRP_cover_panels.html
+        │      FRP_ductwork.html
+        │      FRP_filament_wound_storage_tanks.html
+        │      FRP_storage_vessels.html
+        │      Fully_sealed_sanitary_metal_water_tanks.html
+        │      Gate_hoist_mechanisms.html
+        │      Hexagonal_honeycomb_media.html
+        │      Hollow_plastic_balls.html
+        │      PAC_coagulant.html
+        │      Plastic_Pall_flower_rings.html
+        │      Pressure_resistant_corrosion_proof_tanks.html
+        │      products.json
+        │      Sectional_welded_stainless_steel_water_tanks.html
+        │      Semi_soft_packing_media.html
+        │      Silica_sand_filter_media.html
+        │      Skylight_domes_daylighting_covers.html
+        │      Spherical_water_tanks.html
+        │      Spray_nozzles_various_types.html
+        │      Square_grid_packing.html
+        │      Stainless_steel_sanitary_water_tanks.html
+        │      Stainless_steel_sluice_gates.html
+        │      Stainless_steel_wedge_wire_screens.html
+        │      Step_rings.html
+        │      Vertical_insulated_water_tanks.html
+        │      
+        ├─water
+        │      Anaerobic_treatment_reactors.html
+        │      Automatic_clarifiers.html
+        │      Belt_conveyors.html
+        │      Belt_filter_presses.html
+        │      Biological_contact_oxidation_towers.html
+        │      BS_type_air_flotation_units.html
+        │      Buried_FRP_packaged_sewage_plants.html
+        │      Buried_steel_packaged_sewage_plants.html
+        │      Cable_drive_sludge_scrapers.html
+        │      Cable_operated_trash_rakes.html
+        │      Cavitation_air_flotation_units.html
+        │      Center_drive_clarifier_scrapers.html
+        │      Chamber_plate_and_frame_filter_presses.html
+        │      Curved_bar_screens.html
+        │      Decanter_centrifuges.html
+        │      Dissolved_air_flotation_DAF_clarifiers.html
+        │      Emulsion_wastewater_treatment_skids.html
+        │      Full_bridge_peripheral_drive_sludge_scrapers_circular_clarifiers.html
+        │      General_purpose_mixing_agitators.html
+        │      Grit_classifiers_sand_water_separators.html
+        │      High_speed_clarifier_mixers.html
+        │      Horizontal_screw_discharge_settling_centrifuges.html
+        │      Inclined_tube_settlers.html
+        │      index.html
+        │      Integrated_air_flotation_units.html
+        │      In_line_grinder_screens_comminutors.html
+        │      Lamella_plate_clarifiers.html
+        │      Land_based_oil_water_separators.html
+        │      Low_speed_propeller_mixers_axial_flow.html
+        │      MBR_membrane_bioreactor_packages.html
+        │      Mechanical_bar_screens.html
+        │      products.json
+        │      Radial_flow_clarifier_peripheral_drive_scraper_with_direct_discharge.html
+        │      Rotary_drum_fine_screens.html
+        │      Rotary_shear_flotation_cells.html
+        │      Screw_press_compactors.html
+        │      Shaftless_screw_conveyors.html
+        │      Shallow_tank_high_efficiency_DAF_units.html
+        │      Siphon_suction_sludge_collectors.html
+        │      Slaughterhouse_wastewater_systems.html
+        │      Submersible_mixers.html
+        │      Suction_type_sludge_collectors_for_rectangular_tanks.html
+        │      Surface_oil_skimmers.html
+        │      Surface_skimmers_scum_skimmers.html
+        │      Traveling_bridge_sludge_scrapers.html
+        │      Traveling_chain_rotary_bar_screens.html
+        │      Up_flow_clarifiers.html
+        │      Vortex_flow_grit_chambers.html
+        │      
+        └─water_supply
+                Activated_carbon_filters.html
+                All_in_one_water_conditioning_devices.html
+                Ambient_temperature_deaerators.html
+                Anion_and_cation_exchange_units.html
+                Automatic_pneumatic_booster_pump_systems.html
+                Blow_down_back_flush_filters.html
+                Cartridge_precision_polishing_filters.html
+                CO2_stripping_degassing_towers.html
+                Continuous_sand_filters.html
+                EDL_electro_deionization_units.html
+                Fiber_ball_filters.html
+                Fiber_bundle_filters.html
+                Fluoride_removal_skids.html
+                Fountain_equipment_various_styles.html
+                Fully_automatic_back_wash_filters.html
+                Fully_automatic_water_purifiers.html
+                Fully_automatic_water_softening_systems.html
+                Guard_security_filters.html
+                High_efficiency_pressure_filters.html
+                High_rate_medium_rate_filters.html
+                High_voltage_electrostatic_water_conditioners.html
+                Ion_exchange_vessels.html
+                Iron_and_manganese_removal_filters.html
+                Israeli_ARKAL_disc_filters.html
+                JM_automatic_softeners.html
+                KG_L_series_water_purifiers.html
+                Large_scale_desalination_turn_key_plants.html
+                Manual_brush_type_filters.html
+                Mixed_bed_anion_cation_floating_bed_exchangers.html
+                Modular_softening_skids.html
+                Multimedia_pressure_sand_filters.html
+                New_gravity_gap_free_filters.html
+                Package_compact_water_treatment_units.html
+                Pool_recirculation_equipment.html
+                products.json
+                Reverse_osmosis_RO_desalination_systems.html
+                Self_cleaning_back_wash_filters.html
+                Shallow_bed_filters.html
+                Sludge_water_separators.html
+                Swimming_pool_filters.html
+                Thermal_deaerators.html
+                Ultrafiltration_UF_skids.html
+                Vacuum_deaerators.html
+                VFD_constant_pressure_booster_systems.html
+                Walnut_shell_media_filters.html
+                
