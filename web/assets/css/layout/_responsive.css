@@ -65,17 +65,12 @@
     
     /* 5. 适配下拉菜单 */
     .nav__item--has-dropdown > .dropdown-menu {
-        /* 在移动端，我们不希望它悬浮，而是直接在下方展开 */
-        position: static; /* 取消绝对定位 */
-        box-shadow: none;
-        border-radius: 0;
-        min-width: 100%;
-        padding: 0;
-        background-color: #f5f8fb; /* 给子菜单一个不同的背景色以区分 */
-        transform: none !important; /* 覆盖PC端的动画效果 */
-        
-        /* 默认隐藏子菜单 */
-        display: none;
+        display: none !important; /* 强制隐藏子菜单，不再需要展开 */
+    }
+
+    .nav__item--has-dropdown > .nav__link::after {
+        content: ' ▾'; /* 一个简单的向下小箭头 */
+        font-size: 0.8em;
     }
     
     /* 当父级导航项被点击时（我们稍后用JS实现），显示子菜单 */

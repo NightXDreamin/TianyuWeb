@@ -1,18 +1,17 @@
 <?php
-    ini_set('display_errors', '1');
-    ini_set('display_startup_errors', '1');
+    // --- 诊断探头 ---
+    ini_set('display_errors', 1);
     error_reporting(E_ALL);
 
     // --- 页面配置区 ---
-    // 你只需要修改这里的信息，就可以把这个文件复用到任何一个分类！
-    $category_title = "废气·恶臭治理";
-    $category_subtitle = "PP/FRP喷淋塔联合光氧吸附，多段工艺应对VOCs、异味及酸碱废气，排放轻松达标。";
-    $hero_image_url = "/assets/img/products/废气管道.png";
+    $category_title = "填料·配件耗材";
+    $category_subtitle = "备品备件齐全：弹性填料、曝气头、药泵阀件一站供应。";
+    $hero_image_url = "/assets/img/products/蜂窝填料.png";
 
-    $seo_title = "废气·恶臭治理设备 | 产品中心 - 河南天昱环保";
-    $seo_description = "天昱环保提供多种废气及恶臭治理解决方案，包括废气吸收塔、铅烟净化器、活性炭吸附装置等，技术成熟，应用广泛。";
+    $seo_title = "环保填料与配件耗材 | 曝气器·滤料·组合填料 - 河南天昱环保";
+    $seo_description = "一站式采购环保工程填料、配件与水处理药剂。提供六角蜂窝填料、弹性及组合填料、微孔曝气器、石英砂滤料、聚合氯化铝等，备品备件齐全，确保项目稳定运行。";
 
-    // --- 数据读取区 ---
+    // --- 数据读取区 (无需修改) ---
     $products_json_path = __DIR__ . '/products.json';
     $products = [];
     if (file_exists($products_json_path)) {

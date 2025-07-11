@@ -15,12 +15,12 @@ document.write(`
         <li class="nav__item nav__item--has-dropdown">
           <a href="/products.html" class="nav__link">产品中心</a>
           <ul class="dropdown-menu">
-            <li><a href="/product_lib/water/index.html">污水·废水处理</a></li>
-            <li><a href="/product_lib/water_supply/index.html">纯水·给水系统</a></li>
-            <li><a href="/product_lib/gas/organic-air-treatment.html">废气·恶臭治理</a></li>
-            <li><a href="/product_lib/dust/index.html">除尘·烟气治理</a></li>
-            <li><a href="/product_lib/disinfection/index.html">消毒·杀菌设备</a></li>
-            <li><a href="/product_lib/parts/index.html">填料·配件耗材</a></li>
+            <li><a href="/product_lib/water/index.php">污水·废水处理</a></li>
+            <li><a href="/product_lib/water_supply/index.php">纯水·给水系统</a></li>
+            <li><a href="/product_lib/gas/index.php">废气·恶臭治理</a></li>
+            <li><a href="/product_lib/dust/index.php">除尘·烟气治理</a></li>
+            <li><a href="/product_lib/disinfection/index.php">消毒·杀菌设备</a></li>
+            <li><a href="/product_lib/parts/index.php">填料·配件耗材</a></li>
           </ul>
         </li>
 
@@ -41,7 +41,7 @@ document.write(`
           <a href="/contact.html" class="nav__link">联系我们</a>
           <ul class="dropdown-menu">
             <li><a href="/contact.html#cooperation">咨询合作</a></li>
-            <li><a href="/contact.html#career">工作机会</a></li>
+            <li><a href="/career.php">工作机会</a></li>
           </ul>
         </li>
 

@@ -1,6 +1,6 @@
 ---
-productName: "KE系列型铅烟净化器"
-category: "gas"
+productName: "全自动干粉投加装置"
+category: "disinfection"
 images:
   - "/assets/img/products/gas/ke-purifier_img.png"
   - "/assets/img/products/gas/ke-purifier_data.png"

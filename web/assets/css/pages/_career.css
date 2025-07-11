@@ -1,0 +1,98 @@
+/* assets/css/pages/_career.css */
+
+/* --- 招聘页 Banner (复用) --- */
+/* .hero-about 样式可直接用于此页面 */
+
+/* --- 招聘理念区域 --- */
+.philosophy-section {
+    padding: 80px 0;
+    text-align: center;
+}
+.philosophy-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* --- 职位列表区域 --- */
+.jobs-section {
+    padding: 80px 0;
+    background-color: var(--bg-gray);
+}
+.job-card {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.job-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    background-color: #eaf6ff; /* 淡蓝色标题背景 */
+}
+.job-card__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+.job-card__salary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.job-card__body {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.job-card__body h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.job-card__body ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* --- 如何申请区域 --- */
+.apply-section {
+    padding: 80px 0;
+    text-align: center;
+}
+.apply-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.apply-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.apply-section .apply-email,
+.apply-section .apply-phone {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- 响应式 --- */
+@media (max-width: 768px) {
+    .job-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .job-card__body {
+        grid-template-columns: 1fr;
+    }
+}

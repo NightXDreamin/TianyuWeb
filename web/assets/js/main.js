@@ -15,20 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
 
-    dropdownItems.forEach(item => {
-        // 我们只在链接本身上加点击事件，而不是整个列表项
-        const link = item.querySelector('a'); 
-        link.addEventListener('click', function(event) {
-            // 判断当前是不是在移动端视图
-            if (window.innerWidth <= 768) {
-                // 阻止链接的默认跳转行为
-                event.preventDefault();
-                // 切换 'is-open' 类来展开或收起子菜单
-                item.classList.toggle('is-open');
-            }
-        });
-    });
-    
     // --- 功能二：平滑滚动到锚点 ---
     const backToTopButton = document.querySelector('#back-to-top');
 

@@ -151,3 +151,31 @@
     font-size: 13px; 
     color: #6f6f6f; 
 }
+
+.cta-career-section {
+    padding: 60px 0;
+    background-color: #f5f8fb; /* 使用一个清爽的浅灰色背景 */
+    text-align: center;
+}
+
+.cta-career-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cta-career-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-career-section .btn {
+    /* 复用我们现有的按钮样式即可 */
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.cta-career-section .btn:hover {
+    background-color: #00589c; /* 一个深一点的蓝色 */
+}

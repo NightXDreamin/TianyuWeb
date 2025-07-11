@@ -1,4 +1,4 @@
-/* assets/css/pages/products/_product-category.css */
+/* assets/css/pages/products/_product-category.css (V4 - Specificity Fix) */
 
 /* --- 分类页 Banner (复用) --- */
 /* .hero-about 样式可直接用于此页面 */
@@ -8,14 +8,15 @@
     padding: 80px 0;
 }
 
-.product-grid {
-    display: grid;
-    /* 在大屏幕上最多显示4列 */
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+/* --- 关键改动：让选择器更具体，增加权重！ --- */
+.product-list-section .product-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px; 
 }
 
-/* 重用我们在首页设计好的产品卡片样式 */
+
+/* --- 产品卡片样式 (保持不变) --- */
 .product-card {
     text-decoration: none;
     color: var(--text-dark);
@@ -48,7 +49,6 @@
     text-align: center;
 }
 
-/* --- 页内搜索框样式 --- */
 .in-page-search-section {
     padding: 40px 0;
     background-color: var(--bg-gray);
@@ -56,10 +56,10 @@
 }
 #page-search-input {
     width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 700px; /* 限制最大宽度，让它在宽屏上不会过长 */
+    margin: 0 auto; /* 让它在容器内水平居中 */
     display: block;
-    padding: 15px 20px;
+    padding: 15px 20px; /* 增加内边距，让它变高变大 */
     font-size: 1.1rem;
     border: 1px solid var(--border-color);
     border-radius: 50px; /* 圆角胶囊形状 */

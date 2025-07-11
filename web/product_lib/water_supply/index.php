@@ -1,18 +1,17 @@
 <?php
-    ini_set('display_errors', '1');
-    ini_set('display_startup_errors', '1');
+    // --- 诊断探头 ---
+    ini_set('display_errors', 1);
     error_reporting(E_ALL);
 
     // --- 页面配置区 ---
-    // 你只需要修改这里的信息，就可以把这个文件复用到任何一个分类！
-    $category_title = "废气·恶臭治理";
-    $category_subtitle = "PP/FRP喷淋塔联合光氧吸附，多段工艺应对VOCs、异味及酸碱废气，排放轻松达标。";
-    $hero_image_url = "/assets/img/products/废气管道.png";
+    $category_title = "纯水·给水系统";
+    $category_subtitle = "RO、EDI 及软水装置按需组合，出水电导率 <10 µS/cm，适配锅炉补水与工艺用水。";
+    $hero_image_url = "/assets/img/products/蓄水池.png";
 
-    $seo_title = "废气·恶臭治理设备 | 产品中心 - 河南天昱环保";
-    $seo_description = "天昱环保提供多种废气及恶臭治理解决方案，包括废气吸收塔、铅烟净化器、活性炭吸附装置等，技术成熟，应用广泛。";
+    $seo_title = "纯水·给水系统 | 反渗透(RO)·软化水·过滤器 - 河南天昱环保";
+    $seo_description = "天昱环保提供全套纯水及给水系统解决方案，包括反渗透(RO)脱盐装置、全自动软水器、精密过滤器及不锈钢水箱。满足锅炉补水、工业工艺用水等高标准需求。";
 
-    // --- 数据读取区 ---
+    // --- 数据读取区 (无需修改) ---
     $products_json_path = __DIR__ . '/products.json';
     $products = [];
     if (file_exists($products_json_path)) {
