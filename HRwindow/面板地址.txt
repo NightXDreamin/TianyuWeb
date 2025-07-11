@@ -1,0 +1,13 @@
+网站地址：
+https://tianyuhuanbao.com/career.php
+
+面板地址：
+https://47.122.9.27:21630/ac66bcd4
+
+面板账号：
+0imcrn4j
+
+面板密码：
+616175e7
+
+打开exe文件 -> 删除或增加或更改职位信息 -> 手动保存（一定手动更改） -> 打开面板 -> 左边文件栏 ->确认地址为 “/www/wwwroot/tianyuhuanbao_com” -> 文件夹内career.php文件拖进去 -> 覆盖 ->刷新网页 -> 检查 -> 成功

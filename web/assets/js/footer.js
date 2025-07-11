@@ -11,7 +11,7 @@ document.write(`
       <ul class="footer__contact">
         <li><span class="label">电话：</span><a href="tel:13007606387">13007606387</a></li>
         <li><span class="label">邮箱：</span><a href="mailto:henantianyuhuanbao@163.com">henantianyuhuanbao@163.com</a></li>
-        <li><span class="label">地址：</span>河南省郑州市中原区桐柏路与陇海路交叉口凯旋门大厦1406</li>
+        <li><span class="label">地址：</span>河南省郑州市中原区桐柏路与陇海路交叉口凯旋门大厦1401,1406,1407</li>
       </ul>
     </div>
 
@@ -69,7 +69,7 @@ document.write(`
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "桐柏路与陇海路交叉口凯旋门大厦1406",
+    "streetAddress": "桐柏路与陇海路交叉口凯旋门大厦1401,1406,1407",
     "addressLocality": "郑州市",
     "addressRegion": "河南省",
     "postalCode": "450000",
