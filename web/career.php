@@ -1,12 +1,7 @@
 <?php
     // --- 智能数据中心 ---
-    // 1. 定义JSON文件路径
-    $json_path = __DIR__ . '/data/jobs_data.json'; // 假设json文件在 /web/data/ 目录下
-    
-    // 2. 初始化一个空数组
+    $json_path = __DIR__ . '/data/jobs_data.json';
     $jobs = [];
-
-    // 3. 检查文件是否存在，然后读取并解析
     if (file_exists($json_path)) {
         $json_content = file_get_contents($json_path);
         $jobs = json_decode($json_content, true);
@@ -53,7 +48,9 @@
                     <div class="job-card" data-aos="fade-up" data-aos-delay="<?php echo $index * 100; ?>">
                         <div class="job-card__header">
                             <h3 class="job-card__title"><?php echo htmlspecialchars($job['title']); ?></h3>
-                            <span class="job-card__salary"><?php echo htmlspecialchars($job['salary']); ?></span>
+                            
+                            <span class="job-card__salary"><?php echo htmlspecialchars($job['salaryStart'] . ' - ' . $job['salaryEnd']); ?></span>
+
                         </div>
                         <div class="job-card__body">
                             <div class="job-card__requirements">

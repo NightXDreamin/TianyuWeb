@@ -23,5 +23,6 @@
 @import url("pages/products/gas.css");
 @import url("pages/products/_product-category.css");
 @import url("pages/_career.css");
+@import url("pages/_admin.css");
 /* 5. Responsive Styles (Always last to override previous rules) */
 @import url("layout/_responsive.css");

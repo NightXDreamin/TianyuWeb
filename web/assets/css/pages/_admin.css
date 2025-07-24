@@ -1,0 +1,167 @@
+/* assets/css/pages/_admin.css */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-gray);
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.login-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+.login-form .form__group {
+    margin-bottom: 20px;
+}
+.login-form .form__label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.login-form .form__input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.login-form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+.login-error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ... 你已有的登录页等样式 ... */
+
+.admin-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.05);
+}
+.form__group--half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form__textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+}
+.form__actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+.btn-secondary {
+    background-color: #6c757d;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* --- 后台通用页眉 V2 --- */
+.admin-header {
+    background: white;
+    padding: 0 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.admin-header__logo h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+.admin-header__logo a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+.admin-nav a {
+    margin: 0 20px;
+    padding: 28px 5px; /* 增大点击区域和上下间距 */
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 4px solid transparent; /* 预留高亮下划线位置 */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+.admin-nav a:hover {
+    color: var(--primary-color);
+}
+/* 当前页面导航的高亮样式 */
+.admin-nav a.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+.admin-header__user .logout-link {
+    margin-left: 15px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse; /* 确保边框是单线 */
+    margin-top: 20px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* 添加一点阴影增加质感 */
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #dee2e6; /* 统一的黑色边框 */
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* 关键：统一的灰色表头配色 */
+.admin-table th {
+    background-color: #f8f9fa; /* 职位管理那种浅灰色 */
+    font-weight: 600;
+}
+
+/* 斑马条纹 (可选，但能增加可读性) */
+.admin-table tbody tr:nth-child(even) {
+    background-color: #fdfdfd; 
+}
+
+/* --- 关键修正：限制产品缩略图的大小 --- */
+.admin-table img {
+    max-width: 100px;  /* 限制图片最大宽度 */
+    height: auto;     /* 高度自动缩放 */
+    max-height: 60px; /* 限制一个最大高度 */
+    object-fit: contain; /* 确保图片完整显示 */
+    border-radius: 4px;
+    display: block;
+}
+
+.admin-table .actions {
+    width: 20%;
+    white-space: nowrap;
+}
