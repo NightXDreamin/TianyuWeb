@@ -36,10 +36,12 @@ document.write(`
     <div class="footer__col">
       <h5 class="footer__title">产品中心</h5>
       <ul class="footer__nav">
-        <li><a href="/products.html">废气处理</a></li>
-        <li><a href="/products.html">脱硫除尘</a></li>
-        <li><a href="/products.html">污水治理</a></li>
-        <li><a href="/products.html">噪音控制</a></li>
+        <li><a href="/product_lib/water/index.php">污水处理</a></li>
+        <li><a href="/product_lib/water_supply/index.php">给水系统</a></li>
+        <li><a href="/product_lib/gas/index.php">废气治理</a></li>
+        <li><a href="/product_lib/dust/index.php">脱硫除尘</a></li>
+        <li><a href="/product_lib/disinfection/index.php">消毒杀菌</a></li>
+        <li><a href="/product_lib/parts/index.php">配件耗材</a></li>
       </ul>
     </div>
     
