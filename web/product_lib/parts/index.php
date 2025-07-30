@@ -11,37 +11,43 @@
     $seo_title = "环保填料与配件耗材 | 曝气器·滤料·组合填料 - 河南天昱环保";
     $seo_description = "一站式采购环保工程填料、配件与水处理药剂。提供六角蜂窝填料、弹性及组合填料、微孔曝气器、石英砂滤料、聚合氯化铝等，备品备件齐全，确保项目稳定运行。";
 
-// --- 智能数据提取 ---
+    // --- 
+    // 关键升级：实时扫描文件夹，并从HTML文件中智能提取信息
+    // ---
     $products = [];
-    $html_files = glob('*.html');
+    // glob('*.html') 会找到当前目录下所有的.html文件 (不包括子目录)
+    $html_files = glob('*.html'); 
+    
+    // 检查DOM扩展是否可用，决定使用哪个“引擎”
     $dom_ext_loaded = class_exists('DOMDocument');
 
     foreach ($html_files as $file) {
-        $file_content = file_get_contents($file);
-        $product_name = '未知产品';
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 根相对路径
+        // 防止把分类页自身也加进去
+        if (strtolower($file) === 'index.html') {
+            continue;
+        }
 
-        // 提取产品名称
-        if (preg_match('/<title>(.*?)<\/title>/i', $file_content, $matches)) {
-            $product_name = trim(str_replace(['| 河南天昱环保', '- 废气治理', '- 污水处理'], '', $matches[1]));
+        $file_content = file_get_contents($file);
+        $product_name = '未知产品 - ' . $file; // 默认名称
+        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+
+        // --- 关键修正：优先从 <h1> 标签中抓取产品名称 ---
+        if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {
+            // strip_tags是为了防止<h1>标签里有其他HTML标签，比如<span>
+            $product_name = trim(strip_tags($matches[1]));
         }
         
-        // 提取缩略图
-        if ($dom_ext_loaded) {
-            $dom = new DOMDocument();
-            @$dom->loadHTML('<?xml encoding="utf-8" ?>' . $file_content);
-            $xpath = new DOMXPath($dom);
-            $image_nodes = $xpath->query('//section[contains(@class, "device-images")]//img');
-            if ($image_nodes->length > 0) {
-                $first_image_src = $image_nodes[0]->getAttribute('src');
-                if (!empty($first_image_src)) { $thumbnail_url = $first_image_src; }
-            }
-        } else {
-            if (preg_match('/<section class=".*?device-images.*?">.*?<img.*?src="(.*?)".*?>/is', $file_content, $img_matches)) {
-                if (!empty($img_matches[1])) { $thumbnail_url = $img_matches[1]; }
+        // 2. 终极提取缩略图 (寻找页面里的第一张图片)
+        // 这个正则表达式会寻找第一个 src="..." 属性，无论它在哪个标签里
+        if (preg_match('/<img[^>]+src\s*=\s*["\'](.*?)["\']/i', $file_content, $img_matches)) {
+            $first_image_src = $img_matches[1];
+            // 修正相对路径：如果图片路径不是以'/'或'http'开头，就假定它和HTML文件在同一个目录下
+            if (!preg_match('/^(?:\/|https?:\/\/)/i', $first_image_src)) {
+                $thumbnail_url = $first_image_src; // 保持相对路径，由浏览器解析
+            } else {
+                $thumbnail_url = $first_image_src;
             }
         }
-
         $products[] = ['name' => $product_name, 'thumbnail' => $thumbnail_url, 'link' => $file];
     }
 ?>
@@ -70,8 +76,8 @@
         </section>
 
         <?php if (!$dom_ext_loaded): ?>
-            <div style="background-color: #fff3cd; color: #856404; padding: 15px; text-align: center; border: 1px solid #ffeeba;">
-                <b>开发者提示：</b> 服务器未安装PHP的 "DOM" 扩展，当前正在使用备用方案提取缩略图。为了达到最佳效果，建议在服务器上安装 <b>php-dom</b> 或 <b>php-xml</b> 扩展。
+            <div style="background-color: #fff3cd; color: #856404; padding: 15px; text-align: center; border: 1px solid #ffeeba; margin: 20px;">
+                <b>开发者提示：</b> 服务器未安装PHP的 "DOM" 扩展，当前正在使用备用方案提取缩略图。为了达到最佳效果和性能，建议在服务器上安装 <b>php-dom</b> 或 <b>php-xml</b> 扩展。
             </div>
         <?php endif; ?>
 
