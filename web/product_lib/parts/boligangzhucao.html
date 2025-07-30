@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>玻璃钢贮槽 – FRP 圆筒/方形储槽 | 河南天昱环保</title>
+    <meta name="description" content="FRP 贮槽采用缠绕或手糊成型，耐腐蚀、强度高、轻质耐候，可用于化工、食品、医药、污水调节及消防水箱，模块化拼装，适应现场空间。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/boligangzhucao.webp" alt="玻璃钢贮槽 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/boligangzhucao.webp" alt="玻璃钢贮槽 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>玻璃钢贮槽</h1>
+                    <div class="product-description"><p>本系列贮槽耐酸碱盐及有机溶剂，适用于各类液体储存及调节，结构牢固，可加装搅拌、测量仪表及保温层。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

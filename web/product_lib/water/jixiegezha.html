@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>机械格栅 - 污水预处理设备 | 河南天昱环保</title>
+    <meta name="description" content="了解天昱环保机械格栅，广泛应用于城镇污水、工业废水等预处理环节，有效拦截漂浮杂物，保障后续设备安全运行。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/jixiegezha.webp" alt="机械格栅 缩略图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/jixiegezha.webp" alt="机械格栅 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>机械格栅</h1>
+                <div class="product-description">
+                    <p>
+                        广泛应用于城镇及规划小区的雨、污水的预处理；自来水厂、电厂、钢厂等地表取水口漂浮物的去除；
+                        适用于屠宰、造纸、化纤、纺织、印染等工业废水的杂物分离；原毛、洗毛行业回收的杂物；
+                        水产水果加工工艺中水渣或杂物分离。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>离子交换器 – 软化/脱盐/去离子设备 | 河南天昱环保</title>
+    <meta name="description" content="离子交换器分为阳树脂再生、阴树脂移外再生和全自动再生三种模式，广泛应用于锅炉给水软化、超纯水制备、工业循环水防垢、去离子水工艺，自动化程度高，抗压耐化学腐蚀。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/lizijiaohuanqi.webp" alt="离子交换器 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/lizijiaohuanqi.webp" alt="离子交换器 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>离子交换器</h1>
+                    <div class="product-description"><p>本离子交换器采用高性能强酸/强碱树脂，结合自动再生阀组与PLC控制，可实现自动切换床运行及在线再生，出水电阻率可达1 MΩ·cm，适用于超纯水和工业软化。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

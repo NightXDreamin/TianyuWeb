@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>机械加速澄清池搅拌机 – 澄清池混合搅拌/加速澄清设备 | 河南天昱环保</title>
+    <meta name="description" content="机械加速澄清池搅拌机采用偏心叶轮与变频调速技术，可实现高效澄清与可调回流，广泛用于饮用水、工业给水及工业废水二级处理的澄清阶段，安装维护简便，运行平稳可靠。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/water/jixiejiasuchengqingchijiaobanji.webp" alt="机械加速澄清池搅拌机 缩略图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/water/jixiejiasuchengqingchijiaobanji.webp" alt="机械加速澄清池搅拌机 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>机械加速澄清池搅拌机</h1>
+                    <div class="product-description"><p>机械加速澄清池搅拌机是全国通用的澄清池配套设备，常用于饮用水和工业给水的原水处理，以及工业废水二级澄清阶段。该机型具有运行平稳、可变频调速、可调回流比，且安装维护方便、安全可靠。</p>
+		</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

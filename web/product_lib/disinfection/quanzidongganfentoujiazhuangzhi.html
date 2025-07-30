@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>全自动干粉投加装置 – 粉末化学品投加 | 河南天昱环保</title>
+    <meta name="description" content="全自动干粉投加装置集粉仓、螺旋给料、称重系统与PLC于一体，批量或连续投加粉状化学品，适用于活性炭、石英砂预浸、干粉药剂及固体助剂的精准配制与投加。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/quanzidongganfentoujiazhuangzhi.webp" alt="全自动干粉投加装置 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/quanzidongganfentoujiazhuangzhi.webp" alt="全自动干粉投加装置 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>全自动干粉投加装置</h1>
+                    <div class="product-description"><p>该装置具备自动配料、称重、给料与排出功能，设备性能稳定、体积小、智能化程度高，可完成粉体、颗粒物料的精确配比与投加，适用于干粉粉末和液固混合的加药工艺。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>电站加药装置 – 发电厂水处理化学投加 | 河南天昱环保</title>
+    <meta name="description" content="电站加药装置专为300MW以下汽轮机循环水及补给水设计，采用计量泵与流量比例投加，可根据负荷自动调整投药量，确保锅炉补给水和冷却水质量。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/dianzhanjiayaozhuangzhi.webp" alt="电站加药装置 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/dianzhanjiayaozhuangzhi.webp" alt="电站加药装置 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>电站加药装置</h1>
+                    <div class="product-description"><p>本装置配备防腐计量泵、在线浓度/流量检测与PLC控制，能自动调节投加硅酸盐、磷酸盐、缓蚀剂等，保障机组运行安全。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

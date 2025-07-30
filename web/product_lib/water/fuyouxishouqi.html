@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>浮油吸收器 – 表面油膜去除设备 | 河南天昱环保</title>
+    <meta name="description" content="浮油吸收器通过亲油吸附材料（PP绳、疏水毡）或机械撇油装置，持续捕捉与剥离水面浮油，回收效率高达95%，适用于油库泄漏、油田回注水及厂区排水口水面漂油处理。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/fuyouxishouqi.webp" alt="浮油吸收器 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/fuyouxishouqi.webp" alt="浮油吸收器 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>浮油吸收器</h1>
+                    <div class="product-description"><p>本设备结合物理吸油与机械撇油两种方式，设置在含油水面，通过连续旋转刷盘或吸油带吸附油膜，将油与水分离并导入集油槽，实现低浓度浮油的高效截留。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

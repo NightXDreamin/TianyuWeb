@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>正负离子交换设备 – 双床顺序软化脱盐 | 河南天昱环保</title>
+    <meta name="description" content="本设备由顺序运行的阳离子床和阴离子床组成，采用自动化阀组定时或电导率触发再生，出水可达电阻率18.2 MΩ·cm，广泛应用于电子、医药、实验室及高纯水制备。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/yinyanglizijiaohuanshebei.webp" alt="正负离子交换设备 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/yinyanglizijiaohuanshebei.webp" alt="正负离子交换设备 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>正负离子交换设备</h1>
+                    <div class="product-description"><p>设备由成对的阳离子床和阴离子床交替工作组成，可实现自动切换再生与运行，配套稀酸稀碱再生系统及在线监测，出水电阻率可达18.2 MΩ·cm，完全满足超纯水系统要求。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

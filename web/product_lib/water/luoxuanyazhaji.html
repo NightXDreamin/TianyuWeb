@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>螺旋压榨机 - 污水处理配套设备 | 河南天昱环保</title>
+    <meta name="description" content="螺旋压榨机作为格栅除污机的配套设备，用于压榨格栅杂物中的水分，降低含水率、减少体积。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/luoxuanyazhaji.jpg" alt="螺旋压榨机 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/luoxuanyazhaji.jpg" alt="螺旋压榨机 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>螺旋压榨机</h1>
+                <div class="product-description">
+                    <p>
+                        螺旋压榨机为格栅除污机的配套设备，主要功能是对格栅机捞取的栅渣进行压榨脱水处理，
+                        有效降低其含水率，减少体积，从而提升后续污物处理效率。
+                        该设备具有结构紧凑、运行可靠、维护简便等优点，是污水处理工艺中不可或缺的辅助单元。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active');
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

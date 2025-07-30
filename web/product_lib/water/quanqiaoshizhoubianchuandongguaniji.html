@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>全桥式周边传动刮泥机 - 圆形沉淀池刮泥设备</title>
+    <meta name="description" content="全桥式周边传动刮泥机适用于直径大于20米的沉淀池，集刮泥、吸泥、刮浮渣于一体，处理量大，效果好。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/quanqiaoshizhoubianchuandongguaniji.webp" alt="全桥式周边传动刮泥机 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/quanqiaoshizhoubianchuandongguaniji.webp" alt="全桥式周边传动刮泥机 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>全桥式周边传动刮泥机</h1>
+                <div class="product-description">
+                    <p>
+                        该设备主要用于给水或排水工程中大于20米池径的辐流式沉淀池。设备处理量大，可节省占地面积，集刮泥、吸泥、刮浮渣同步进行，能耗少，适应性强，易实现全自动控制。结构可靠、维护方便，适用于城市污水处理厂、自来水厂及工业废水处理等领域。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if (thumbnails.length > 0) {
+                thumbnails[0].classList.add('active');
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

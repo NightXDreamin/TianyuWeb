@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>除二氧化碳脱气塔 – 脱气/脱CO₂设备 | 河南天昱环保</title>
+    <meta name="description" content="脱气塔通过逆流喷水或真空脱气工艺，有效去除水中溶解性二氧化碳（CO₂）及挥发性有机物，防止后续管路腐蚀与膜污染，常用于锅炉给水、除盐水及膜前预处理。
+
+">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/chueryanghuatantuoqita.webp" alt="除二氧化碳脱气塔 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/chueryanghuatantuoqita.webp" alt="除二氧化碳脱气塔 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>除二氧化碳脱气塔</h1>
+                    <div class="product-description"><p>本脱气塔可选脱气膜或喷淋+真空泵组合方式，在常温常压或真空条件下，将CO₂脱除率提高至95%以上，出水CO₂残余<1 mg/L，保护后续设备并提升膜系统效率。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>JM全自动软水器 – 工业及民用软化水系统 | 河南天昱环保</title>
+    <meta name="description" content="JM系列全自动软水器采用双罐交替运行与自动再生技术，配备PLC智能控制，可实现离子交换式软化，出水硬度<0.1 mmol/L，广泛用于锅炉给水、循环补水及高纯水预处理。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/JMquanzidongruanshuiqi.webp" alt="JM全自动软水器 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/JMquanzidongruanshuiqi.webp" alt="JM全自动软水器 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>JM全自动软水器</h1>
+                    <div class="product-description"><p>JM软水器由两套树脂罐和在线再生系统组成，通过定时或电导率控制自动切换再生，确保持续稳定软水供应，适合工业锅炉、冷却循环水及公寓热水系统。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

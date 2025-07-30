@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>乳化液处理装置 – 切削液/冷却液回收设备 | 河南天昱环保</title>
+    <meta name="description" content="乳化液处理装置针对不含表面活性剂的切削、磨削及冷却油乳化液，通过破乳、沉降、过滤和杀菌消毒等工艺，回收利用切削油，减少废液排放，提高溶液使用寿命。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/ruhuayechulizhuangzhi.webp" alt="乳化液处理装置 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/ruhuayechulizhuangzhi.webp" alt="乳化液处理装置 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>乳化液处理装置</h1>
+                    <div class="product-description"><p>本装置集破乳、沉降、气浮、过滤与杀菌于一体，能够在连续运行状态下有效去除乳化油中的细小油滴与微量固体杂质，回收率可达85%以上，适用于金属加工、电子制造等行业。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

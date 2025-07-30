@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>垂架式中心传动刮泥机 - 污泥集中刮集设备</title>
+    <meta name="description" content="垂架式中心传动刮泥机适用于中大型沉淀池，用于集中刮集污泥，结构可靠，运行平稳。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/chuijiashizhongxinchuanadongguaniji.webp" alt="垂架式中心传动刮泥机 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/chuijiashizhongxinchuanadongguaniji.webp" alt="垂架式中心传动刮泥机 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>垂架式中心传动刮泥机</h1>
+                <div class="product-description">
+                    <p>
+                        垂架式中心传动刮泥机主要由减速驱动机构、传动立轴、刮臂、水下轴承及集泥槽刮板等部件组成。该设备的荷载均作用于沉淀池的工作桥中心，适用于大型沉淀池，结构合理，刮泥效果好，运行平稳可靠，是集中刮集污泥的理想设备。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if (thumbnails.length > 0) {
+                thumbnails[0].classList.add('active');
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

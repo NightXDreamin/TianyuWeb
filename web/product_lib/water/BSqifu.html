@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>BS气浮</title>
+    <meta name="description" content="配有卧室反应室和缓冲隔板，提升浮渣去除效率，适应性强、流态稳定。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/BSqifu.webp" alt="BS气浮 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/BSqifu.webp" alt="BS气浮 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>BS气浮</h1>
+                <div class="product-description">
+                    <p>
+                        本装置增设了卧室反应室、导流缓冲隔板，改进了浮渣排除方式，使气浮效果得到进一步提高，因此具有适应性强、流态稳定、投药和反应一体等特点。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

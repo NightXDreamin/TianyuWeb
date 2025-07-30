@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>保安过滤器</title>
+  <meta name="description" content="保安过滤器用于去除大颗粒杂质，保护后级膜系统或精密设备，常见于反渗透、超滤等预处理系统。">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <script src="/assets/js/header.js"></script>
+
+  <section class="device-detail">
+    <div class="container">
+      <div class="image-gallery">
+        <ul class="thumbnail-list">
+          <li><img src="/assets/img/products/detail_img/baoanguolvqi.webp" alt="保安过滤器 略缩图"></li>
+        </ul>
+        <div class="main-image">
+          <img id="main-product-image" src="/assets/img/products/detail_img/baoanguolvqi.webp" alt="保安过滤器 主图">
+        </div>
+      </div>
+      <div class="product-info">
+        <h1>保安过滤器</h1>
+        <div class="product-description">
+          <p>
+            保安过滤器主要用于去除水中的大颗粒杂质，以保护后续的膜过滤系统或精密设备。该设备具有结构简单、操作方便、使用寿命长、过滤精度高等特点。广泛应用于反渗透、超滤等系统的预处理环节中，也适用于电子、医药、化工等行业的水处理系统。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="device-description">
+    <div class="container">
+      
+    </div>
+  </section>
+
+  <script src="/assets/js/footer.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const thumbnailList = document.querySelector('.thumbnail-list');
+    const mainImage = document.getElementById('main-product-image');
+
+    if (thumbnailList && mainImage) {
+      const thumbnails = thumbnailList.querySelectorAll('li');
+      if(thumbnails.length > 0) {
+        thumbnails[0].classList.add('active');
+      }
+
+      thumbnailList.addEventListener('click', (event) => {
+        const li = event.target.closest('li');
+        if (li) {
+          const newMainImageSrc = li.querySelector('img').src;
+          mainImage.src = newMainImageSrc;
+
+          thumbnails.forEach(item => item.classList.remove('active'));
+          li.classList.add('active');
+        }
+      });
+    }
+  });
+  </script>
+
+</body>
+</html>

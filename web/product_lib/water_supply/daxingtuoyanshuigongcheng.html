@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>大型脱盐水工程 – 海水/苦咸水脱盐及循环水补给 | 河南天昱环保</title>
+    <meta name="description" content="我司承接10,000–100,000 m³/d 大型脱盐水工程，结合多级反渗透、混床脱盐、除氧除盐及后处理技术，服务电厂、化工、海水淡化及城市供水，整体能耗低、自动化程度高、出水稳定。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/daxingtuoyanshuigongcheng.webp" alt="大型脱盐水工程 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/daxingtuoyanshuigongcheng.webp" alt="大型脱盐水工程 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>大型脱盐水工程</h1>
+                    <div class="product-description"><p>工程采用预处理→双级反渗透→混床脱盐或EDI深度脱盐→后处理（pH调节、杀菌、矿化），全程PLC/SCADA控制，出水TDS＜10 mg/L，可直接回用或市政管网补给。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

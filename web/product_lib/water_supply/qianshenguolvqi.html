@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>浅层过滤器</title>
+    <meta name="description" content="高效率、全自动、低维护的工业与民用水处理过滤设备">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/qianshenguolvqi.webp" alt="浅层过滤器 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/qianshenguolvqi.webp" alt="浅层过滤器 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>浅层过滤器</h1>
+                <div class="product-description">
+                    <p>
+                        全自动浅层过滤系统是由多个标准高速砂缸单元组成，其内部设有独特的布水器和集水器。拥有独特的双向自动冲洗阀，可实现正常系统运行中多个标准高速砂缸逐个单独的反冲洗，全自动程序控制。具有反冲洗用水量小、设备安装方便、易于维护等优点。该设备流量大、无需维护。根据不同的用户要求，有立式和卧式两个系列。适用于工业和民用循环水系统的水质处理。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

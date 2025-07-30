@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>ABS排水帽/滤水帽 – 过滤塔底配件 | 河南天昱环保</title>
+    <meta name="description" content="ABS排水帽与滤水帽配合滤水管网使用，耐冲击、耐腐蚀、不易堵塞，确保均匀排水与支撑滤料，是砂缸与多介质过滤器底部组件的理想选择。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/ABSpaishuimao_lvshuimao.webp" alt="ABS排水帽、滤水帽 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/ABSpaishuimao_lvshuimao.webp" alt="ABS排水帽、滤水帽 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>ABS排水帽、滤水帽</h1>
+                    <div class="product-description"><p>ABS材质排水帽与滤水帽经抗紫外线改性处理，结构优化，阻力小、通水均匀，可耐多种化学介质，广泛用于砂缸与多介质过滤底部。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

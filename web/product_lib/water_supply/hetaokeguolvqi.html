@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>核桃壳过滤器 – 天然滤料/含油废水深度过滤 | 河南天昱环保</title>
+    <meta name="description" content="采用优质核桃壳为滤料，结合多介质河砂和活性炭，可高效截留油滴与悬浮物，出水含油量<10 mg/L，滤料反冲洗可重复使用，环保经济，适用范围广。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/hetaokeguolvqi.webp" alt="核桃壳过滤器 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/hetaokeguolvqi.webp" alt="核桃壳过滤器 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>核桃壳过滤器</h1>
+                    <div class="product-description"><p>以天然核桃壳颗粒为核心滤料，配合石英砂与活性炭分层过滤，能在常压运行下高效去除含油废水中的悬浮固体与油脂，并可在线反冲洗再生。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

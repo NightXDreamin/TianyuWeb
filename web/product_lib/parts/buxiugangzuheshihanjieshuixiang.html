@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>不锈钢组合焊接式水箱</title>
+    <meta name="description" content="不锈钢组合焊接水箱模块化板块焊接成型，克服传统水箱制作难、安装占地大、易泄漏等缺陷，内外防腐、卫生无盲区，寿命长、无污染、适用于冷热水及消防给水。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/buxiugangzuheshihanjieshuixiang.webp" alt="不锈钢组合焊接式水箱 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/buxiugangzuheshihanjieshuixiang.webp" alt="不锈钢组合焊接式水箱 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>不锈钢组合焊接式水箱</h1>
+                    <div class="product-description"><p>模块化不锈钢水箱由304/316L 板材拼接焊接而成，整体结构坚固，耐腐蚀、防渗漏，安装快捷，可用于生活、消防及工艺水储存。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

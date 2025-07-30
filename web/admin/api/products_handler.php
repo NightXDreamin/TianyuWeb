@@ -6,7 +6,7 @@ session_start();
 
 $response = ['status' => 'error', 'message' => '无效的操作。'];
 $productLibDir = __DIR__ . '/../../product_lib';
-$templatePath = __DIR__ . '/../../../product_template.html'; // 模板文件在项目根目录
+$templatePath = __DIR__ . '/../../data/product_template.html'; // 模板文件在项目根目录
 
 // 安全检查
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {

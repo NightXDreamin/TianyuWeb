@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>臭氧发生器 – 高效氧化/消毒系统 | 河南天昱环保</title>
+    <meta name="description" content="臭氧发生器采用不锈钢或陶瓷管式电极与高压放电技术，气源可选干燥空气或氧气，产气浓度5–15 g/Nm³，广泛用于饮用水消毒、废气脱硫及工业流程灭菌除藻。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/chouyangfashengqi.webp" alt="臭氧发生器 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/chouyangfashengqi.webp" alt="臭氧发生器 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>臭氧发生器</h1>
+                    <div class="product-description"><p>该设备采用模块化不锈钢放电单元与高压电源，自带空气干燥与冷却系统，可持续生成高浓度臭氧，用于水处理及工业废气净化，具有杀菌、降解有机物及除臭功能。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

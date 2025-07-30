@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>卧式螺旋卸料沉降离心机 - 污水处理设备 | 河南天昱环保</title>
+    <meta name="description" content="卧式螺旋卸料沉降离心机广泛应用于水处理及工业脱水工艺中，具有自动连续分离、结构紧凑、运行稳定的特点。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/woshiluoxuanxieliaochenjianglixinji.webp" alt="卧式螺旋卸料沉降离心机 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/woshiluoxuanxieliaochenjianglixinji.webp" alt="卧式螺旋卸料沉降离心机 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>卧式螺旋卸料沉降离心机</h1>
+                <div class="product-description">
+                    <p>
+                        卧式螺旋卸料沉降离心机采用离心沉降原理对悬浮液进行连续固液分离，适用于污水处理、工业脱水、化工、制药、食品等领域。其结构紧凑、处理能力强、分离效率高，自动化程度高，能实现连续进料、分离和出料，运行平稳，维护方便，是现代固液分离工艺中不可或缺的设备。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if (thumbnails.length > 0) {
+                thumbnails[0].classList.add('active');
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>KG-L净水器</title>
+    <meta name="description" content="适用于分散厂矿、边远山区部队及供水系统的一体化净水设备，集混合、反应、沉淀、过滤于一体。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/KG-Ljingshuiqi.webp" alt="KG-L净水器 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/KG-Ljingshuiqi.webp" alt="KG-L净水器 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>KG-L净水器</h1>
+                <div class="product-description">
+                    <p>
+                        KG-L净水器是集混合、反应、沉淀、过滤于一体的一元化设备，适用于分散的厂矿企业、部队单位、边远的多山地区及广大的农村。设备采用压力配水系统，在反应区采用新技术，加强了吸附凝聚反应；沉淀部分采用斜管，提高沉淀效率；过滤系统采用石英砂、锰砂、活性炭、耐腐蚀树脂，出水水质优良，结构紧凑，操作管理简便，自动化程度高，是一种优秀的净水设备。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

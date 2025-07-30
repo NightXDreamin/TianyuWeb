@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>镶铜铸铁方闸门 – 方形闸门/止水控流设备 | 河南天昱环保</title>
+    <meta name="description" content="镶铜铸铁方闸门采用优质铸铜与铸铁材质，配备弹性密封圈和可调式换形压块，确保长期耐磨耐蚀、精准止水，广泛用于水处理厂、渠道、灌溉及市政给排水系统，结构坚固、性能可靠、维护简便。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/xiangtongzhutiefangzhamen.webp" alt="镶铜铸铁方闸门 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/xiangtongzhutiefangzhamen.webp" alt="镶铜铸铁方闸门 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>镶铜铸铁方闸门</h1>
+                    <div class="product-description"><p>由闸板、闸框、密封圈及可调式换形压块组成，密封圈磨损后可通过调整压块恢复止水性能；具有结构合理坚固、耐震耐蚀、性能可靠、安装调换维护方便等特点。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

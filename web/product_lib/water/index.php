@@ -11,68 +11,50 @@
     $seo_title = "污水·废水处理设备 | 产品中心 - 河南天昱环保";
     $seo_description = "查看天昱环保全系列污水与废水处理设备，包括机械格栅、刮泥机、气浮机、MBR膜生物反应器、一体化处理设备等，为各类水质提供可靠解决方案。";
 
-    // --- 数据读取区 (无需修改) ---
-    $products_json_path = __DIR__ . '/products.json';
+    // --- 
+    // 关键升级：实时扫描文件夹，并从HTML文件中智能提取信息
+    // ---
     $products = [];
-    if (file_exists($products_json_path)) {
-        $products = json_decode(file_get_contents($products_json_path), true);
+    $html_files = glob('*.html'); 
+
+    foreach ($html_files as $file) {
+        $file_content = file_get_contents($file);
+        $product_name = '未知产品';
+        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+
+        // 1. 智能提取产品名称 (从<title>标签)
+        if (preg_match('/<title>(.*?)<\/title>/i', $file_content, $matches)) {
+            $product_name = trim(str_replace(['| 河南天昱环保', '- 废气治理', '- 污水处理'], '', $matches[1]));
+        }
+        
+        // 2. 智能提取缩略图 (从详情页的第一张产品图片)
+        // 使用DOMDocument解析HTML，这比正则表达式更可靠
+        $dom = new DOMDocument();
+        // @符号抑制因HTML不规范而产生的警告
+        @$dom->loadHTML($file_content);
+        $xpath = new DOMXPath($dom);
+        // 寻找 class="device-images" 区块里的第一张 <img>
+        $image_nodes = $xpath->query('//section[contains(@class, "device-images")]//img');
+        
+        if ($image_nodes->length > 0) {
+            $first_image_src = $image_nodes[0]->getAttribute('src');
+            // 确保URL是正确的相对或绝对路径
+            if (!empty($first_image_src)) {
+                $thumbnail_url = $first_image_src;
+            }
+        }
+
+        $products[] = [
+            'name' => $product_name,
+            'thumbnail' => $thumbnail_url,
+            'link' => $file
+        ];
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title><?php echo htmlspecialchars($seo_title); ?></title>
-    <meta name="description" content="<?php echo htmlspecialchars($seo_description); ?>">
-    
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+    </head>
 <body>
-
-    <script src="/assets/js/header.js"></script>
-
-    <main class="product-category-page">
-        <section class="hero-about" style="background-image: url('<?php echo htmlspecialchars($hero_image_url); ?>');">
-            <div class="container" data-aos="fade-in">
-                <h1 class="hero-about__title"><?php echo htmlspecialchars($category_title); ?></h1>
-                <p class="hero-about__subtitle"><?php echo htmlspecialchars($category_subtitle); ?></p>
-            </div>
-        </section>
-
-        <section class="in-page-search-section">
-            <div class="container">
-                <input type="text" id="page-search-input" placeholder="在“<?php echo htmlspecialchars($category_title); ?>”分类下搜索设备...">
-            </div>
-        </section>
-
-        <section class="product-list-section">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>设备列表</h2>
-                </div>
-                
-                <div class="product-grid" id="product-grid-container">
-                    <?php if (!empty($products)): ?>
-                        <?php foreach ($products as $index => $product): ?>
-                            <a href="<?php echo htmlspecialchars($product['link']); ?>" class="product-card" data-aos="fade-up" data-aos-delay="<?php echo ($index % 4) * 50; ?>">
-                                <img src="<?php echo htmlspecialchars($product['thumbnail']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
-                                <p><?php echo htmlspecialchars($product['name']); ?></p>
-                            </a>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <p style="text-align: center; width: 100%;">该分类下暂无产品，敬请期待。</p>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="/assets/js/footer.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="/assets/js/main.js"></script>
-</body>
+    </body>
 </html>

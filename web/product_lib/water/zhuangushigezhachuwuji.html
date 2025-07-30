@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>转鼓式格栅除污机 - 污水处理设备 | 河南天昱环保</title>
+  <meta name="description" content="了解天昱环保转鼓式格栅除污机，广泛应用于污水预处理环节，能有效拦截并输送垃圾至收集点，提升系统自动化水平。">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <script src="/assets/js/header.js"></script>
+
+  <section class="device-detail">
+    <div class="container">
+      <div class="image-gallery">
+        <ul class="thumbnail-list">
+          <li><img src="/assets/img/products/detail_img/zhuangushigezhachuwuji.webp" alt="转鼓式格栅除污机 缩略图"></li>
+        </ul>
+        <div class="main-image">
+          <img id="main-product-image" src="/assets/img/products/detail_img/zhuangushigezhachuwuji.webp" alt="转鼓式格栅除污机 主图">
+        </div>
+      </div>
+      <div class="product-info">
+        <h1>转鼓式格栅除污机</h1>
+        <div class="product-description">
+          <p>
+            污水由下端面进入转鼓型格栅内，垃圾被转鼓格栅阻挡，回转式齿轮将垃圾沿转鼓方向向上推，到顶部时，由于受到重力及刮刷的作用，使垃圾落入下方的集污斗内；
+            由螺旋输送机将垃圾输送到卸污口处，最终完成垃圾转运。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="device-description">
+    <div class="container">
+      <!-- 可选扩展说明区域 -->
+    </div>
+  </section>
+
+  <script src="/assets/js/footer.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const thumbnailList = document.querySelector('.thumbnail-list');
+    const mainImage = document.getElementById('main-product-image');
+
+    if (thumbnailList && mainImage) {
+      const thumbnails = thumbnailList.querySelectorAll('li');
+      if(thumbnails.length > 0) {
+        thumbnails[0].classList.add('active');
+      }
+
+      thumbnailList.addEventListener('click', (event) => {
+        const li = event.target.closest('li');
+        if (li) {
+          const newMainImageSrc = li.querySelector('img').src;
+          mainImage.src = newMainImageSrc;
+
+          thumbnails.forEach(item => item.classList.remove('active'));
+          li.classList.add('active');
+        }
+      });
+    }
+  });
+  </script>
+</body>
+</html>

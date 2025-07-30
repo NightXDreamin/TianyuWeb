@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>厢式压滤机 - 固液分离设备 | 河南天昱环保</title>
+    <meta name="description" content="厢式压滤机是一种间歇操作的加压过滤设备，广泛用于工业废水处理及各类固液分离过程。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/xiangshiyalvji.webp" alt="厢式压滤机 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/xiangshiyalvji.webp" alt="厢式压滤机 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>厢式压滤机</h1>
+                <div class="product-description">
+                    <p>
+                        厢式压滤机是一种间歇操作的加压过滤设备，广泛应用于化工、冶金、食材加工、染料、制药、酿酒等行业的固液分离。适用于含固率较高或需要高干度的污水处理场景，特别适合滤饼回收利用价值较高的工况。适应处理固相浓度为0.1%～60%的悬浮液，亦适用于胶体状及粘性较强的物料，操作简便，滤液清澈。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if (thumbnails.length > 0) {
+                thumbnails[0].classList.add('active');
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

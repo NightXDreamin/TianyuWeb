@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>气浮净水器 – 溶气浮选/深度澄清设备 | 河南天昱环保</title>
+    <meta name="description" content="气浮净水器利用高压溶气技术产生微小气泡（20–50 μm），通过气泡与悬浮物结合上浮，再经刮渣装置排除，实现高效去除SS、油脂和胶体。适用于市政、石化、食品与造纸废水。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+        <section class="device-detail">
+            <div class="container">
+                <div class="image-gallery">
+                    <ul class="thumbnail-list">
+                        <li><img src="/assets/img/products/detail_img/qifujingshuiqi.webp" alt="气浮净水器 略缩图"></li>
+                    </ul>
+                    <div class="main-image">
+                        <img id="main-product-image" src="/assets/img/products/detail_img/qifujingshuiqi.webp" alt="气浮净水器 主图">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>气浮净水器</h1>
+                    <div class="product-description"><p>本气浮器集溶气罐、混合区与澄清区于一体，采用闭式溶气和曝气释放双模式，气泡浓度高、运行阻力小，能快速去除悬浮物和细微油脂，出水清澈透明。</p>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="device-description">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

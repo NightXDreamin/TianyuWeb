@@ -6,7 +6,7 @@ session_start();
 
 $response = ['status' => 'error', 'message' => '无效的操作。'];
 $caseLibDir = __DIR__ . '/../../cases_lib';
-$templatePath = __DIR__ . '/../../../case_template.html'; // 案例模板在项目根目录
+$templatePath = __DIR__ . '/../../data/case_template.html'; // 案例模板在项目根目录
 
 // 安全检查
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {

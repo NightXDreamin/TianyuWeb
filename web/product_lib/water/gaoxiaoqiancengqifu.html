@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>高效浅层气浮</title>
+    <meta name="description" content="用于工业污水与造纸废水中纤维回收、悬浮物去除、气浮除杂与污泥浓缩等处理的高效气浮设备。">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <script src="/assets/js/header.js"></script>
+
+    <section class="device-detail">
+        <div class="container">
+            <div class="image-gallery">
+                <ul class="thumbnail-list">
+                    <li><img src="/assets/img/products/detail_img/gaoxiaoqiancengqifu.webp" alt="高效浅层气浮 略缩图"></li>
+                </ul>
+                <div class="main-image">
+                    <img id="main-product-image" src="/assets/img/products/detail_img/gaoxiaoqiancengqifu.webp" alt="高效浅层气浮 主图">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>高效浅层气浮</h1>
+                <div class="product-description">
+                    <p>
+                        高效浅层气浮设备广泛应用于工业污水处理系统，如造纸、食品、电镀、制革、纺织、印染、石油、化工等行业，尤其适用于造纸行业中纤维回收。该设备可用于给水处理中的除藻、降浊，也可用于生活污泥的浓缩处理。具有占地小、操作简单、处理效率高等特点。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-description">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script src="/assets/js/footer.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const thumbnailList = document.querySelector('.thumbnail-list');
+        const mainImage = document.getElementById('main-product-image');
+
+        if (thumbnailList && mainImage) {
+            const thumbnails = thumbnailList.querySelectorAll('li');
+            if(thumbnails.length > 0) {
+                thumbnails[0].classList.add('active'); // 默认高亮第一个
+            }
+
+            thumbnailList.addEventListener('click', (event) => {
+                const li = event.target.closest('li');
+                if (li) {
+                    const newMainImageSrc = li.querySelector('img').src;
+                    mainImage.src = newMainImageSrc;
+
+                    thumbnails.forEach(item => item.classList.remove('active'));
+                    li.classList.add('active');
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
