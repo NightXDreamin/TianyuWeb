@@ -12,10 +12,11 @@
 /* 关键改动：为全宽容器添加左右内边距 */
 .header__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* 两端对齐 */
+    align-items: center; /* 垂直居中 */
     width: 100%;
-    padding: 0 40px; /* 左右留出一些空间，避免内容贴边 */
+    padding: 0 40px;
+    gap: 20px; /* 元素之间的最小间距 */
 }
 
 .header__logo img {
@@ -24,6 +25,10 @@
 }
 .header__logo img:hover {
     transform: scale(1.05);
+}
+
+.header__nav {
+    flex-grow: 1; /* 让导航菜单占据所有可用的多余空间 */
 }
 
 .main-nav .nav__list {
@@ -218,19 +223,42 @@
     color: inherit; /* 让备案号链接颜色和周围文字一样 */
 }
 
-/* --- 页首全局搜索框样式 --- */
+/* --- 页首全局搜索框样式 (V2 - Click-to-expand) --- */
 .header__search {
+    display: flex;
+    align-items: center;
     margin: 0 20px;
+}
+.search-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex; /* 用于垂直居中SVG */
+    align-items: center;
+    justify-content: center;
+}
+.search-toggle-btn svg {
+    width: 22px;
+    height: 22px;
+    color: #555;
 }
 .search-form {
     position: relative;
+    transition: width 0.4s ease-in-out;
+    width: 0; /* 默认隐藏 */
+    visibility: hidden;
+}
+.search-form.is-active {
+    width: 250px; /* 展开后的宽度 */
+    visibility: visible;
 }
 .search-form__input {
     border: 1px solid var(--border-color);
     border-radius: 50px;
     padding: 10px 40px 10px 20px;
-    width: 250px;
-    transition: width 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box; /* 确保padding不会撑大宽度 */
 }
 .search-form__input:focus {
     outline: none;
@@ -247,8 +275,4 @@
     cursor: pointer;
     padding: 8px;
     color: #888;
-}
-.search-form__button svg {
-    width: 20px;
-    height: 20px;
 }

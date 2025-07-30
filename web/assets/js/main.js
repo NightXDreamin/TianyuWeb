@@ -151,3 +151,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 });
+
+const searchToggleBtn = document.getElementById('search-toggle-btn');
+const searchForm = document.querySelector('.search-form');
+const searchInput = document.querySelector('.search-form__input');
+
+if (searchToggleBtn && searchForm && searchInput) {
+    searchToggleBtn.addEventListener('click', (event) => {
+        event.stopPropagation(); // 防止点击事件冒泡到document
+        searchForm.classList.toggle('is-active');
+        if (searchForm.classList.contains('is-active')) {
+            searchInput.focus(); // 展开时自动聚焦
+        }
+    });
+
+    // 点击搜索框以外的区域，自动收起
+    document.addEventListener('click', (event) => {
+        const isClickInside = searchForm.contains(event.target) || searchToggleBtn.contains(event.target);
+        if (!isClickInside) {
+            searchForm.classList.remove('is-active');
+        }
+    });
+}
