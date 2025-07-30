@@ -7,7 +7,7 @@
     // 你只需要修改这里的信息，就可以把这个文件复用到任何一个分类！
     $category_title = "废气·恶臭治理";
     $category_subtitle = "PP/FRP喷淋塔联合光氧吸附，多段工艺应对VOCs、异味及酸碱废气，排放轻松达标。";
-    $hero_image_url = "/assets/img/products/废气管道.png";
+    $hero_image_url = "/assets/img/products/废气管道.webp";
 
     $seo_title = "废气·恶臭治理设备 | 产品中心 - 河南天昱环保";
     $seo_description = "天昱环保提供多种废气及恶臭治理解决方案，包括废气吸收塔、铅烟净化器、活性炭吸附装置等，技术成熟，应用广泛。";
@@ -30,7 +30,7 @@
 
         $file_content = file_get_contents($file);
         $product_name = '未知产品 - ' . $file; // 默认名称
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+        $thumbnail_url = '/assets/img/products/placeholder.webp'; // 默认缩略图
 
         // --- 关键修正：优先从 <h1> 标签中抓取产品名称 ---
         if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {

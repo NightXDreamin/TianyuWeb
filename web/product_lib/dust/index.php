@@ -6,7 +6,7 @@
     // --- 页面配置区 ---
     $category_title = "除尘·烟气治理";
     $category_subtitle = "袋式、旋风、湿式多技术可选；捕集效率 ≥99%，满足锅炉窑炉等高粉尘场景。";
-    $hero_image_url = "/assets/img/products/除尘塔.png";
+    $hero_image_url = "/assets/img/products/除尘塔.webp";
 
     $seo_title = "工业除尘与烟气脱硫脱硝设备 | 河南天昱环保";
     $seo_description = "专业提供袋式、旋风、湿式等多种工业除尘器及烟气脱硫脱硝解决方案。我们的设备捕集效率高，运行稳定，适用于锅炉、窑炉等高粉尘及复杂烟气场景。";
@@ -29,7 +29,7 @@
 
         $file_content = file_get_contents($file);
         $product_name = '未知产品 - ' . $file; // 默认名称
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+        $thumbnail_url = '/assets/img/products/placeholder.webp'; // 默认缩略图
 
         // --- 关键修正：优先从 <h1> 标签中抓取产品名称 ---
         if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {

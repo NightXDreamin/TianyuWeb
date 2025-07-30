@@ -6,7 +6,7 @@
     // --- 页面配置区 ---
     $category_title = "填料·配件耗材";
     $category_subtitle = "备品备件齐全：弹性填料、曝气头、药泵阀件一站供应。";
-    $hero_image_url = "/assets/img/products/蜂窝填料.png";
+    $hero_image_url = "/assets/img/products/蜂窝填料.webp";
 
     $seo_title = "环保填料与配件耗材 | 曝气器·滤料·组合填料 - 河南天昱环保";
     $seo_description = "一站式采购环保工程填料、配件与水处理药剂。提供六角蜂窝填料、弹性及组合填料、微孔曝气器、石英砂滤料、聚合氯化铝等，备品备件齐全，确保项目稳定运行。";
@@ -29,7 +29,7 @@
 
         $file_content = file_get_contents($file);
         $product_name = '未知产品 - ' . $file; // 默认名称
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+        $thumbnail_url = '/assets/img/products/placeholder.webp'; // 默认缩略图
 
         // --- 关键修正：优先从 <h1> 标签中抓取产品名称 ---
         if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {

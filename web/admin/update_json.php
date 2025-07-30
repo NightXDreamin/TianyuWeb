@@ -29,7 +29,7 @@ foreach ($categories as $category) {
 
         $file_content = file_get_contents($file_path);
         $product_name = '未知产品 - ' . $file_name;
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认图
+        $thumbnail_url = '/assets/img/products/placeholder.webp'; // 默认图
 
         // 1. 提取标题
         if (preg_match('/<title>(.*?)<\/title>/i', $file_content, $matches)) {

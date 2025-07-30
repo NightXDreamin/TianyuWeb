@@ -10,20 +10,20 @@
         "water" => [
             "title" => "水处理案例",
             "subtitle" => "我们在工业废水、医疗污水与市政污水治理方面拥有多年EPC经验。",
-            "image" => "/assets/img/cases/污水站例子.png"
+            "image" => "/assets/img/cases/污水站例子.webp"
         ],
         "gas" => [
             "title" => "气体处理案例",
             "subtitle" => "专注VOCs、粉尘及脱硫脱硝等复杂废气治理，技术成熟。",
-            "image" => "/assets/img/cases/除尘例子.png"
+            "image" => "/assets/img/cases/除尘例子.webp"
         ],
         "noise" => [
             "title" => "噪音治理案例",
             "subtitle" => "为工厂车间及配套设施提供一体化降噪解决方案。",
-            "image" => "/assets/img/cases/噪声例子.png"
+            "image" => "/assets/img/cases/噪声例子.webp"
         ]
     ];
-    $current_category = $categories_map[$category_id] ?? ['title' => '工程案例', 'subtitle' => '', 'image' => '/assets/img/cases/远景脱硫塔.png'];
+    $current_category = $categories_map[$category_id] ?? ['title' => '工程案例', 'subtitle' => '', 'image' => '/assets/img/cases/远景脱硫塔.webp'];
     $seo_title = $current_category['title'] . " | 工程案例 - 河南天昱环保";
     $seo_description = "精选河南天昱环保在" . $current_category['title'] . "领域的成功项目，展示我们从设计到交付的综合实力。";
 
@@ -36,7 +36,7 @@
 
         $file_content = file_get_contents($file);
         $case_title = '未知案例 - ' . $file;
-        $case_image = '/assets/img/placeholder.png'; // 默认封面图
+        $case_image = '/assets/img/placeholder.webp'; // 默认封面图
 
         // 1. 智能提取案例标题 (从<h1>标签)
         if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {

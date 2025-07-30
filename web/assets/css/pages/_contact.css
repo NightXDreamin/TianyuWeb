@@ -113,7 +113,7 @@
 
 /* --- 地图专属样式 --- */
 .amap-marker .icon { 
-    background: url(//a.amap.com/lbs-dev-yuntu/static/web/image/tools/creater/marker.png) no-repeat; 
+    background: url(//a.amap.com/lbs-dev-yuntu/static/web/image/tools/creater/marker.webp) no-repeat; 
 }
 .amap-marker .icon-cir { 
     height: 31px; 

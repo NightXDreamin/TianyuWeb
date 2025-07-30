@@ -24,7 +24,7 @@
 
     <main class="career-page">
 
-        <section class="hero-about" style="background-image: url('/assets/img/1406前台.png');">
+        <section class="hero-about" style="background-image: url('/assets/img/1406前台.webp');">
             <div class="container" data-aos="fade-in">
                 <h1 class="hero-about__title">加入我们，成就梦想</h1>
                 <p class="hero-about__subtitle">与天昱同行，共创环保事业的美好明天</p>

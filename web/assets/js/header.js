@@ -5,7 +5,7 @@ document.write(`
   <div class="header__container">
     <div class="header__logo logo">
       <a href="/index.html">
-        <img src="/assets/img/Logo带文字窄.png" alt="天昱环保 LOGO">
+        <img src="/assets/img/Logo带文字窄.webp" alt="天昱环保 LOGO">
       </a>
     </div>
 
@@ -28,9 +28,9 @@ document.write(`
             <li class="nav__item nav__item--has-dropdown">
                 <a href="/cases.html" class="nav__link">工程案例</a>
                 <ul class="dropdown-menu">
-                    <li><a href="/cases_lib/water/index.php">水处理案例</a></li>
-                    <li><a href="/cases_lib/gas/index.php">气体处理案例</a></li>
-                    <li><a href="/cases_lib/noise/index.php">噪音控制案例</a></li>
+                    <li><a href="/case_lib/water/index.php">水处理案例</a></li>
+                    <li><a href="/case_lib/gas/index.php">气体处理案例</a></li>
+                    <li><a href="/case_lib/noise/index.php">噪音控制案例</a></li>
                 </ul>
             </li>
             <li class="nav__item nav__item--has-dropdown">

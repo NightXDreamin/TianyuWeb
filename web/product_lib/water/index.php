@@ -6,7 +6,7 @@
     // --- 页面配置区 ---
     $category_title = "污水·废水处理";
     $category_subtitle = "覆盖生活与工业污水全流程：从预处理到达标排放，一体化模块安装快、运维省。";
-    $hero_image_url = "/assets/img/products/污水站池子.png";
+    $hero_image_url = "/assets/img/products/污水站池子.webp";
 
     $seo_title = "污水·废水处理设备 | 产品中心 - 河南天昱环保";
     $seo_description = "查看天昱环保全系列污水与废水处理设备，包括机械格栅、刮泥机、气浮机、MBR膜生物反应器、一体化处理设备等，为各类水质提供可靠解决方案。";
@@ -29,7 +29,7 @@
 
         $file_content = file_get_contents($file);
         $product_name = '未知产品 - ' . $file; // 默认名称
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+        $thumbnail_url = '/assets/img/products/placeholder.webp'; // 默认缩略图
 
         // --- 关键修正：优先从 <h1> 标签中抓取产品名称 ---
         if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {

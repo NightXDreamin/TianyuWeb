@@ -6,7 +6,7 @@
     // --- 页面配置区 ---
     $category_title = "消毒·杀菌设备";
     $category_subtitle = "自产次氯酸钠、臭氧、紫外线系列设备，现场制剂现场投加，安全高效。";
-    $hero_image_url = "/assets/img/products/消毒桶.png";
+    $hero_image_url = "/assets/img/products/消毒桶.webp";
 
     $seo_title = "水处理消毒杀菌设备 | 次氯酸钠·臭氧·紫外线发生器 - 河南天昱环保";
     $seo_description = "选购天昱环保高效水处理消毒杀菌设备。我们提供次氯酸钠发生器、臭氧发生器、紫外线(UV)消毒装置等，适用于饮用水、循环水及污水处理，现场制备，安全可靠。";
@@ -29,7 +29,7 @@
 
         $file_content = file_get_contents($file);
         $product_name = '未知产品 - ' . $file; // 默认名称
-        $thumbnail_url = '/assets/img/products/placeholder.png'; // 默认缩略图
+        $thumbnail_url = '/assets/img/products/placeholder.webp'; // 默认缩略图
 
         // --- 关键修正：优先从 <h1> 标签中抓取产品名称 ---
         if (preg_match('/<h1[^>]*>(.*?)<\/h1>/i', $file_content, $matches)) {
