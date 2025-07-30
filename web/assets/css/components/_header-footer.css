@@ -217,3 +217,38 @@
 .footer__bottom a {
     color: inherit; /* 让备案号链接颜色和周围文字一样 */
 }
+
+/* --- 页首全局搜索框样式 --- */
+.header__search {
+    margin: 0 20px;
+}
+.search-form {
+    position: relative;
+}
+.search-form__input {
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 10px 40px 10px 20px;
+    width: 250px;
+    transition: width 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.search-form__input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 125, 188, 0.15);
+    width: 300px; /* 聚焦时变宽 */
+}
+.search-form__button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #888;
+}
+.search-form__button svg {
+    width: 20px;
+    height: 20px;
+}

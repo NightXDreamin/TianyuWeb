@@ -1,0 +1,11 @@
+/* _search.css */
+.search-results-page .search-header { padding: 40px 0; background-color: var(--bg-gray); }
+.search-results-page h1 { margin-bottom: 10px; }
+.search-results-page .query-highlight { color: var(--primary-color); }
+.search-results-list { padding: 60px 0; }
+.search-result-item { margin-bottom: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 40px; }
+.search-result-item__title a { font-size: 1.5rem; text-decoration: none; color: var(--text-dark); }
+.search-result-item__title a:hover { color: var(--primary-color); }
+.search-result-item__meta { font-size: 0.9em; color: #888; margin-top: 8px; }
+.search-result-item__meta .type { background-color: var(--primary-color); color: white; padding: 3px 8px; border-radius: 4px; }
+.search-result-item__description { margin-top: 15px; line-height: 1.7; color: #555; }

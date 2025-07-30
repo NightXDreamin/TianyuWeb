@@ -48,6 +48,15 @@ document.write(`
       </ul>
     </nav>
 
+    <div class="header__search">
+        <form action="/search.php" method="GET" class="search-form">
+            <input type="search" name="query" class="search-form__input" placeholder="搜索产品、案例..." required>
+            <button type="submit" class="search-form__button" aria-label="搜索">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </button>
+        </form>
+    </div>
+
     <div class="header__cta">
       <a href="tel:13007606387" class="btn phone-btn">立刻咨询 · 13007606387</a>
     </div>
