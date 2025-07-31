@@ -1,0 +1,17 @@
+"filename", "language", "HTML", "PHP", "JSON", "JavaScript", "PostCSS", "Python", "comment", "blank", "total"
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\build_search_index.php", "PHP", 0, 77, 0, 0, 0, 0, 3, 15, 95
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\components\_header-footer.css", "PostCSS", 0, 0, 0, 0, 56, 0, 1, 2, 59
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\main.css", "PostCSS", 0, 0, 0, 0, 1, 0, 0, 0, 1
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_index.css", "PostCSS", 0, 0, 0, 0, 12, 0, 1, 4, 17
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\css\pages\_search.css", "PostCSS", 0, 0, 0, 0, 10, 0, 1, 0, 11
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\img\products\pinyinalize_script.py", "Python", 0, 0, 0, 0, 0, -23, -7, -6, -36
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\js\header.js", "JavaScript", 0, 0, 0, 5, 0, 0, 1, 1, 7
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\assets\js\main.js", "JavaScript", 0, 0, 0, 18, 0, 0, 1, 3, 22
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\case_lib\gas\xinjiangguangtongfeiqichulixiangmu.html", "HTML", 57, 0, 0, 0, 0, 0, 0, 8, 65
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\case_lib\noise\jingkaierfuyuanzaoshengzhilixiangmu.html", "HTML", 57, 0, 0, 0, 0, 0, 0, 8, 65
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\case_lib\water\donghaituzaichangfeishuichulixiangmu.html", "HTML", 57, 0, 0, 0, 0, 0, 0, 8, 65
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\case_lib\water\tongxvxianlizhuangxiangwushuizhanxiangmu.html", "HTML", 57, 0, 0, 0, 0, 0, 0, 8, 65
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\data\search_index.json", "JSON", 0, 0, 1297, 0, 0, 0, 0, 0, 1297
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\index.html", "HTML", 42, 0, 0, 0, 0, 0, 0, 0, 42
+"c:\Users\60991\OneDrive\Documents\GitHub\TianyuWeb\web\search.php", "PHP", 0, 60, 0, 0, 0, 0, 2, 3, 65
+"Total", "-", 270, 137, 1297, 23, 79, -23, 3, 54, 1840

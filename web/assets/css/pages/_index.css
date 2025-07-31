@@ -1,17 +1,32 @@
 /* --- Hero Banner --- */
 #hero {
+    /* 移除全局的上下内边距 */
+    padding: 0; 
+    
+    /* 高度精确计算：100%视口高度 减去 80px的页眉高度 */
+    height: calc(100vh - 120px); 
+
     position: relative;
-    height: calc(100vh - 100px); /* 减去新的、更高的页眉高度 */
     overflow: hidden;
 }
 
 /* --- 移动端响应式调整 (终极版) --- */
 @media (max-width: 768px) {
     #hero {
-        height: 70vh;
-        min-height: 500px;
-        background-size: contain;
+        height: 50vh; /* 1. 将高度调整为一个更合适的比例 */
+        min-height: 350px;
+        
+        /* 2. 关键！改变背景图的显示模式 */
+        background-size: contain; /* 从 cover 改为 contain */
+        
+        /* 3. 为可能出现的留白区域设置一个和谐的背景色 */
         background-color: #eaf6ff; 
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+        /* (可选) 如果觉得白色标题在浅色背景上看不清，可以加一点文字阴影 */
+        text-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
 }
 
