@@ -1,21 +1,53 @@
 /* For #products-slider & products.html */
 .product-card {
+    display: flex;
+    flex-direction: column; /* 确保内容垂直排列 */
     background-color: var(--bg-light);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    text-align: center;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all .3s ease;
 }
+
 .product-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
 }
+
+/* 关键修正：创建一个固定比例的“相框” */
+.product-card__image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* 设置一个经典的4:3宽高比，你可以根据喜好调整 */
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+}
+
 .product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 100%; /* 让图片100%填满相框的高度 */
+    object-fit: cover; /* 智能裁剪并填充，不变形 */
 }
+
+.product-card p {
+    flex-grow: 1; 
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+    display: flex; /* 使用flex让文字垂直居中 */
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .homepage .product-grid--slider .product-card {
+        flex: 0 0 250px; /* 在手机上让卡片窄一点，可以多显示一些 */
+    }
+}
+
 .product-card__name, .product-card p {
     padding: 20px;
     font-weight: bold;

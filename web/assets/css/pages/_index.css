@@ -167,20 +167,61 @@
 }
 
 /* --- Partners --- */
-.partners__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 40px;
-    align-items: center;
+/* --- 合作伙伴版块 (V2 - 滚动轮播版) --- */
+/* --- 合作伙伴版块 (V3 - 无缝滚动最终版) --- */
+#partners {
+    padding: 80px 0;
+    background-color: var(--bg-gray);
 }
+
+.logo-scroller {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.logo-scroller__inner {
+    display: flex; /* 必须是flex */
+    flex-wrap: nowrap; /* 禁止换行 */
+    gap: 60px; /* Logo之间的间距 */
+    width: fit-content; /* 让容器宽度由内容决定 */
+    /* 关键：定义一个更平滑、更长的动画 */
+    animation: scroll 60s linear infinite;
+}
+
+/* 鼠标悬停时暂停动画，提升用户体验 */
+.logo-scroller:hover .logo-scroller__inner {
+    animation-play-state: paused;
+}
+
 .partner-logo {
-    filter: grayscale(100%);
-    opacity: 0.6;
-    transition: filter var(--transition-speed) ease, opacity var(--transition-speed) ease;
+    height: 100px; /* 统一所有Logo的高度 */
+    width: auto;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
 }
+
 .partner-logo:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0);
     opacity: 1;
+}
+
+/* 关键修正：确保动画平滑无缝 */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /*
+         * 让它向左移动“一组logo的宽度 + 一组gap的宽度”
+         * -50% 正好是一半的距离
+         * -30px 是半个gap的距离 (gap: 60px)
+        */
+        transform: translateX(calc(-50% - 30px));
+    }
 }
 
 /* --- Scroll Fade-in Animation --- */
@@ -255,4 +296,17 @@
 
 .dot.active {
     background-color: var(--text-light);
+}
+/* --- 
+    关键修正：
+    为首页滑动传送带里的产品卡片，设定一个固定的基础宽度。
+--- */
+.homepage .featured-products .product-grid--slider .product-card {
+    /* * flex: 0 0 300px; 的意思是：
+     * flex-grow: 0;   (空间多余时，不允许放大)
+     * flex-shrink: 0; (空间不足时，不允许缩小)
+     * flex-basis: 300px; (基础宽度就是300像素)
+    */
+    flex: 0 0 300px;
+    scroll-snap-align: start; /* 确保滚动时能与边缘对齐 */
 }

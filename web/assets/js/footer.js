@@ -15,6 +15,7 @@ document.write(`
       </ul>
     </div>
 
+    <div class="footer__links">
     <div class="footer__col">
       <h5 class="footer__title">关于天昱</h5>
       <ul class="footer__nav">
@@ -33,7 +34,7 @@ document.write(`
       </ul>
     </div>
 
-    <div class="footer__col">
+    <div class="footer__col footer__col--products">
       <h5 class="footer__title">产品中心</h5>
       <ul class="footer__nav">
         <li><a href="/product_lib/water/index.php">污水处理</a></li>
@@ -45,6 +46,7 @@ document.write(`
       </ul>
     </div>
     
+    </div>
   </div>
   
   <div class="footer__bottom">
@@ -80,3 +82,4 @@ document.write(`
 }
 </script>
 `);
+

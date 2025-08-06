@@ -276,3 +276,42 @@
     padding: 8px;
     color: #888;
 }
+
+@media (max-width:576px){
+  .footer__links{
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:24px;      /* 横向间距 */
+    row-gap:12px;         /* 纵向间距 */
+  }
+  .footer__links .footer__col{
+    flex:1 1 45%;         /* 两列并排，最窄 ≈45% */
+    min-width:140px;
+  }
+}
+
+.footer__links{
+/* ≥ 577 px 桌面/平板 */ 
+display:flex; gap:60px; 
+/* 与 .footer__inner 保持一致 */ 
+}
+
+@media(max-width:576px){ 
+.footer__links{ 
+flex-wrap:wrap; 
+column-gap:24px; 
+row-gap:12px; 
+} 
+.footer__links .footer__col
+{ 
+flex:1 1 45%; min-width:140px; 
+} /* 只针对产品中心这一列： */ 
+.footer__col--products .footer__nav{ 
+display:grid; 
+grid-template-columns:repeat(2,1fr); 
+gap:6px 12px; /* 行×列 间距 */ 
+} 
+.footer__col--products .footer__nav li{ 
+margin:4px 0; /* 删掉默认 8 px 竖间距 */ 
+} 
+}
